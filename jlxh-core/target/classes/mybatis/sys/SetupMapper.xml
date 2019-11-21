@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.fzy.sys.dao.SetupDao">
+
+	<select id="get" resultType="com.fzy.sys.domain.SetupDO">
+		select `id`,`prize_is_start`,`prize_start_time`,`prize_end_time`,`prize_number_of_day`,`integral_rebate`,`cash_charge`,`service_telephone`,`service_img`,`seller_base_balance`,`about_us_content` from sys_setup where id = #{value}
+	</select>
+
+	<select id="list" resultType="com.fzy.sys.domain.SetupDO">
+		select `id`,`prize_is_start`,`prize_start_time`,`prize_end_time`,`prize_number_of_day`,`integral_rebate`,`cash_charge`,`service_telephone`,`service_img`,`seller_base_balance`,`about_us_content` from sys_setup
+        <where>  
+		  		  <if test="id != null and id != ''"> and id = #{id} </if>
+		  		  <if test="prizeIsStart != null and prizeIsStart != ''"> and prize_is_start = #{prizeIsStart} </if>
+		  		  <if test="prizeStartTime != null and prizeStartTime != ''"> and prize_start_time = #{prizeStartTime} </if>
+		  		  <if test="prizeEndTime != null and prizeEndTime != ''"> and prize_end_time = #{prizeEndTime} </if>
+		  		  <if test="prizeNumberOfDay != null and prizeNumberOfDay != ''"> and prize_number_of_day = #{prizeNumberOfDay} </if>
+		  		  <if test="integralRebate != null and integralRebate != ''"> and integral_rebate = #{integralRebate} </if>
+		  		  <if test="cashCharge != null and cashCharge != ''"> and cash_charge = #{cashCharge} </if>
+		  		  <if test="serviceTelephone != null and serviceTelephone != ''"> and service_telephone = #{serviceTelephone} </if>
+		  		  <if test="serviceImg != null and serviceImg != ''"> and service_img = #{serviceImg} </if>
+		  		  <if test="sellerBaseBalance != null and sellerBaseBalance != ''"> and seller_base_balance = #{sellerBaseBalance} </if>
+		  		  <if test="aboutUsContent != null and aboutUsContent != ''"> and about_us_content = #{aboutUsContent} </if>
+		  		</where>
+        <choose>
+            <when test="sort != null and sort.trim() != ''">
+                order by ${sort} ${order}
+            </when>
+			<otherwise>
+                order by id desc
+			</otherwise>
+        </choose>
+		<if test="offset != null and limit != null">
+			limit #{offset}, #{limit}
+		</if>
+	</select>
+	
+ 	<select id="count" resultType="int">
+		select count(*) from sys_setup
+		 <where>  
+		  		  <if test="id != null and id != ''"> and id = #{id} </if>
+		  		  <if test="prizeIsStart != null and prizeIsStart != ''"> and prize_is_start = #{prizeIsStart} </if>
+		  		  <if test="prizeStartTime != null and prizeStartTime != ''"> and prize_start_time = #{prizeStartTime} </if>
+		  		  <if test="prizeEndTime != null and prizeEndTime != ''"> and prize_end_time = #{prizeEndTime} </if>
+		  		  <if test="prizeNumberOfDay != null and prizeNumberOfDay != ''"> and prize_number_of_day = #{prizeNumberOfDay} </if>
+		  		  <if test="integralRebate != null and integralRebate != ''"> and integral_rebate = #{integralRebate} </if>
+		  		  <if test="cashCharge != null and cashCharge != ''"> and cash_charge = #{cashCharge} </if>
+		  		  <if test="serviceTelephone != null and serviceTelephone != ''"> and service_telephone = #{serviceTelephone} </if>
+		  		  <if test="serviceImg != null and serviceImg != ''"> and service_img = #{serviceImg} </if>
+		  		  <if test="sellerBaseBalance != null and sellerBaseBalance != ''"> and seller_base_balance = #{sellerBaseBalance} </if>
+		  		  <if test="aboutUsContent != null and aboutUsContent != ''"> and about_us_content = #{aboutUsContent} </if>
+		  		</where>
+	</select>
+	 
+	<insert id="save" parameterType="com.fzy.sys.domain.SetupDO">
+		insert into sys_setup
+		(
+			`id`, 
+			`prize_is_start`, 
+			`prize_start_time`, 
+			`prize_end_time`, 
+			`prize_number_of_day`, 
+			`integral_rebate`, 
+			`cash_charge`, 
+			`service_telephone`, 
+			`service_img`, 
+			`seller_base_balance`, 
+			`about_us_content`
+		)
+		values
+		(
+			#{id}, 
+			#{prizeIsStart}, 
+			#{prizeStartTime}, 
+			#{prizeEndTime}, 
+			#{prizeNumberOfDay}, 
+			#{integralRebate}, 
+			#{cashCharge}, 
+			#{serviceTelephone}, 
+			#{serviceImg}, 
+			#{sellerBaseBalance}, 
+			#{aboutUsContent}
+		)
+	</insert>
+	 
+	<update id="update" parameterType="com.fzy.sys.domain.SetupDO">
+		update sys_setup 
+		<set>
+			<if test="prizeIsStart != null">`prize_is_start` = #{prizeIsStart}, </if>
+			<if test="prizeStartTime != null">`prize_start_time` = #{prizeStartTime}, </if>
+			<if test="prizeEndTime != null">`prize_end_time` = #{prizeEndTime}, </if>
+			<if test="prizeNumberOfDay != null">`prize_number_of_day` = #{prizeNumberOfDay}, </if>
+			<if test="integralRebate != null">`integral_rebate` = #{integralRebate}, </if>
+			<if test="cashCharge != null">`cash_charge` = #{cashCharge}, </if>
+			<if test="serviceTelephone != null">`service_telephone` = #{serviceTelephone}, </if>
+			<if test="serviceImg != null">`service_img` = #{serviceImg}, </if>
+			<if test="sellerBaseBalance != null">`seller_base_balance` = #{sellerBaseBalance}, </if>
+			<if test="aboutUsContent != null">`about_us_content` = #{aboutUsContent}</if>
+		</set>
+		where id = #{id}
+	</update>
+	
+	<delete id="remove">
+		delete from sys_setup where id = #{value}
+	</delete>
+	
+	<delete id="batchRemove">
+		delete from sys_setup where id in 
+		<foreach item="id" collection="array" open="(" separator="," close=")">
+			#{id}
+		</foreach>
+	</delete>
+
+</mapper>

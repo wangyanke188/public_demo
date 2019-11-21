@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.fzy.sys.dao.ArticleDao">
+
+	<select id="get" resultType="com.fzy.sys.domain.ArticleDO">
+		select `id`,`article_title`,`author`,`source`,`article_title_image`,`url`,`introduce`,`article_content`,`type`,`art_type`,`create_time`,`update_time`,`release_time`,`commit_time`,`is_publish`,`is_delete`,`is_display` from system_article where id = #{value}
+	</select>
+
+	<select id="list" resultType="com.fzy.sys.domain.ArticleDO">
+		select `id`,`article_title`,`author`,`source`,`article_title_image`,`url`,`introduce`,`article_content`,`type`,`art_type`,`create_time`,`update_time`,`release_time`,`commit_time`,`is_publish`,`is_delete`,`is_display` from system_article
+        <where>  
+		  		  <if test="id != null and id != ''"> and id = #{id} </if>
+		  		  <if test="articleTitle != null and articleTitle != ''"> and article_title = #{articleTitle} </if>
+		  		  <if test="author != null and author != ''"> and author = #{author} </if>
+		  		  <if test="source != null and source != ''"> and source = #{source} </if>
+		  		  <if test="articleTitleImage != null and articleTitleImage != ''"> and article_title_image = #{articleTitleImage} </if>
+		  		  <if test="url != null and url != ''"> and url = #{url} </if>
+		  		  <if test="introduce != null and introduce != ''"> and introduce = #{introduce} </if>
+		  		  <if test="articleContent != null and articleContent != ''"> and article_content = #{articleContent} </if>
+		  		  <if test="type != null and type != ''"> and type = #{type} </if>
+		  		  <if test="artType != null and artType != ''"> and art_type = #{artType} </if>
+		  		  <if test="createTime != null and createTime != ''"> and create_time = #{createTime} </if>
+		  		  <if test="updateTime != null and updateTime != ''"> and update_time = #{updateTime} </if>
+		  		  <if test="releaseTime != null and releaseTime != ''"> and release_time = #{releaseTime} </if>
+		  		  <if test="commitTime != null and commitTime != ''"> and commit_time = #{commitTime} </if>
+		  		  <if test="isPublish != null and isPublish != ''"> and is_publish = #{isPublish} </if>
+		  		  <if test="isDelete != null and isDelete != ''"> and is_delete = #{isDelete} </if>
+		  		  <if test="isDisplay != null and isDisplay != ''"> and is_display = #{isDisplay} </if>
+		  		</where>
+        <choose>
+            <when test="sort != null and sort.trim() != ''">
+                order by ${sort} ${order}
+            </when>
+			<otherwise>
+                order by id desc
+			</otherwise>
+        </choose>
+		<if test="offset != null and limit != null">
+			limit #{offset}, #{limit}
+		</if>
+	</select>
+	
+ 	<select id="count" resultType="int">
+		select count(*) from system_article
+		 <where>  
+		  		  <if test="id != null and id != ''"> and id = #{id} </if>
+		  		  <if test="articleTitle != null and articleTitle != ''"> and article_title = #{articleTitle} </if>
+		  		  <if test="author != null and author != ''"> and author = #{author} </if>
+		  		  <if test="source != null and source != ''"> and source = #{source} </if>
+		  		  <if test="articleTitleImage != null and articleTitleImage != ''"> and article_title_image = #{articleTitleImage} </if>
+		  		  <if test="url != null and url != ''"> and url = #{url} </if>
+		  		  <if test="introduce != null and introduce != ''"> and introduce = #{introduce} </if>
+		  		  <if test="articleContent != null and articleContent != ''"> and article_content = #{articleContent} </if>
+		  		  <if test="type != null and type != ''"> and type = #{type} </if>
+		  		  <if test="artType != null and artType != ''"> and art_type = #{artType} </if>
+		  		  <if test="createTime != null and createTime != ''"> and create_time = #{createTime} </if>
+		  		  <if test="updateTime != null and updateTime != ''"> and update_time = #{updateTime} </if>
+		  		  <if test="releaseTime != null and releaseTime != ''"> and release_time = #{releaseTime} </if>
+		  		  <if test="commitTime != null and commitTime != ''"> and commit_time = #{commitTime} </if>
+		  		  <if test="isPublish != null and isPublish != ''"> and is_publish = #{isPublish} </if>
+		  		  <if test="isDelete != null and isDelete != ''"> and is_delete = #{isDelete} </if>
+		  		  <if test="isDisplay != null and isDisplay != ''"> and is_display = #{isDisplay} </if>
+		  		</where>
+	</select>
+	 
+	<insert id="save" parameterType="com.fzy.sys.domain.ArticleDO" useGeneratedKeys="true" keyProperty="id">
+		insert into system_article
+		(
+			`article_title`, 
+			`author`, 
+			`source`, 
+			`article_title_image`, 
+			`url`, 
+			`introduce`, 
+			`article_content`, 
+			`type`, 
+			`art_type`, 
+			`create_time`, 
+			`update_time`, 
+			`release_time`, 
+			`commit_time`, 
+			`is_publish`, 
+			`is_delete`, 
+			`is_display`
+		)
+		values
+		(
+			#{articleTitle}, 
+			#{author}, 
+			#{source}, 
+			#{articleTitleImage}, 
+			#{url}, 
+			#{introduce}, 
+			#{articleContent}, 
+			#{type}, 
+			#{artType}, 
+			#{createTime}, 
+			#{updateTime}, 
+			#{releaseTime}, 
+			#{commitTime}, 
+			#{isPublish}, 
+			#{isDelete}, 
+			#{isDisplay}
+		)
+	</insert>
+	 
+	<update id="update" parameterType="com.fzy.sys.domain.ArticleDO">
+		update system_article 
+		<set>
+			<if test="articleTitle != null">`article_title` = #{articleTitle}, </if>
+			<if test="author != null">`author` = #{author}, </if>
+			<if test="source != null">`source` = #{source}, </if>
+			<if test="articleTitleImage != null">`article_title_image` = #{articleTitleImage}, </if>
+			<if test="url != null">`url` = #{url}, </if>
+			<if test="introduce != null">`introduce` = #{introduce}, </if>
+			<if test="articleContent != null">`article_content` = #{articleContent}, </if>
+			<if test="type != null">`type` = #{type}, </if>
+			<if test="artType != null">`art_type` = #{artType}, </if>
+			<if test="createTime != null">`create_time` = #{createTime}, </if>
+			<if test="updateTime != null">`update_time` = #{updateTime}, </if>
+			<if test="releaseTime != null">`release_time` = #{releaseTime}, </if>
+			<if test="commitTime != null">`commit_time` = #{commitTime}, </if>
+			<if test="isPublish != null">`is_publish` = #{isPublish}, </if>
+			<if test="isDelete != null">`is_delete` = #{isDelete}, </if>
+			<if test="isDisplay != null">`is_display` = #{isDisplay}</if>
+		</set>
+		where id = #{id}
+	</update>
+	
+	<delete id="remove">
+		delete from system_article where id = #{value}
+	</delete>
+	
+	<delete id="batchRemove">
+		delete from system_article where id in 
+		<foreach item="id" collection="array" open="(" separator="," close=")">
+			#{id}
+		</foreach>
+	</delete>
+
+</mapper>

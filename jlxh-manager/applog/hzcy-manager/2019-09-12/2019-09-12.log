@@ -1,0 +1,565 @@
+2019-09-12 09:22:06 -Starting ManagerMain on PC-20120727WMQF with PID 8744 (G:\hn_jlxh\jlxh-manager\target\classes started by Administrator in G:\hn_jlxh\jlxh-manager)
+2019-09-12 09:22:06 -The following profiles are active: dev
+2019-09-12 09:22:07 -Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-09-12 09:22:07 -Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-09-12 09:22:07 -Finished Spring Data repository scanning in 24ms. Found 0 repository interfaces.
+2019-09-12 09:22:09 -Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$bb5bb5e9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-12 09:22:09 -Bean 'shiroConfig' of type [com.fzy.system.config.ShiroConfig$$EnhancerBySpringCGLIB$$8327e2fe] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-12 09:22:09 -Bean 'userRealm' of type [com.fzy.system.shiro.UserRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-12 09:22:09 -No configuration found. Configuring ehcache from ehcache-failsafe.xml  found in the classpath: jar:file:/D:/Program%20Files%20(x86)/Apche/repository/net/sf/ehcache/ehcache/2.10.6/ehcache-2.10.6.jar!/ehcache-failsafe.xml
+2019-09-12 09:22:09 -Bean 'cacheManager2' of type [net.sf.ehcache.CacheManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-12 09:22:09 -Bean 'ehCacheManager' of type [org.apache.shiro.cache.ehcache.EhCacheManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-12 09:22:09 -Cache with name 'com.fzy.system.shiro.UserRealm.authorizationCache' does not yet exist.  Creating now.
+2019-09-12 09:22:10 -Added EhCache named [com.fzy.system.shiro.UserRealm.authorizationCache]
+2019-09-12 09:22:10 -Bean 'sessionDAO' of type [org.apache.shiro.session.mgt.eis.MemorySessionDAO] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-12 09:22:10 -Bean 'sessionManager' of type [org.apache.shiro.web.session.mgt.DefaultWebSessionManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-12 09:22:10 -Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-12 09:22:10 -Bean 'authorizationAttributeSourceAdvisor' of type [org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-12 09:22:10 -Tomcat initialized with port(s): 7070 (http)
+2019-09-12 09:22:10 -Initializing ProtocolHandler ["http-nio-7070"]
+2019-09-12 09:22:10 -Starting service [Tomcat]
+2019-09-12 09:22:10 -Starting Servlet engine: [Apache Tomcat/9.0.14]
+2019-09-12 09:22:10 -The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_171\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/Java/jdk1.8.0_171/bin/../jre/bin/server;C:/Program Files/Java/jdk1.8.0_171/bin/../jre/bin;C:/Program Files/Java/jdk1.8.0_171/bin/../jre/lib/amd64;C:\Program Files\Java\jdk1.8.0_171\bin;C:\Program Files\Java\jdk1.8.0_171\jre\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;G:\xftp\;G:\xshell\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;D:\phpStudy\PHPTutorial\php\php-5.6.27-nts;D:\composer;C:\Program Files\Git\cmd;C:\Program Files\MySQL\MySQL Server 5.5\bin;C:\Users\Administrator.PC-20120727WMQF\AppData\Roaming\Composer\vendor\bin;C:\Users\Administrator.PC-20120727WMQF\Desktop;;.]
+2019-09-12 09:22:10 -Initializing Spring embedded WebApplicationContext
+2019-09-12 09:22:10 -Root WebApplicationContext: initialization completed in 4544 ms
+2019-09-12 09:22:11 -Filter xssFilter was not registered (disabled)
+2019-09-12 09:22:11 -{dataSource-1} inited
+2019-09-12 09:22:13 -Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-12 09:22:14 -[THYMELEAF][main] Template Mode 'LEGACYHTML5' is deprecated. Using Template Mode 'HTML' instead.
+2019-09-12 09:22:15 -Starting ProtocolHandler ["http-nio-7070"]
+2019-09-12 09:22:15 -Tomcat started on port(s): 7070 (http) with context path ''
+2019-09-12 09:22:15 -Started ManagerMain in 10.296 seconds (JVM running for 16.419)
+2019-09-12 09:22:44 -Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-09-12 09:22:44 -Initializing Servlet 'dispatcherServlet'
+2019-09-12 09:22:44 -Completed initialization in 58 ms
+2019-09-12 09:22:44 -Enabling session validation scheduler...
+2019-09-12 09:22:44 -请求地址 : http://127.0.0.1:7070/
+2019-09-12 09:22:44 -HTTP METHOD : GET
+2019-09-12 09:22:44 -CLASS_METHOD : com.fzy.system.controller.LoginController.welcome
+2019-09-12 09:22:44 -参数 : [{}]
+2019-09-12 09:22:44 -耗时 : 3
+2019-09-12 09:22:44 -请求地址 : http://127.0.0.1:7070/login
+2019-09-12 09:22:44 -HTTP METHOD : GET
+2019-09-12 09:22:44 -CLASS_METHOD : com.fzy.system.controller.LoginController.login
+2019-09-12 09:22:44 -参数 : []
+2019-09-12 09:22:44 -耗时 : 1
+2019-09-12 09:22:46 -请求地址 : http://127.0.0.1:7070/vifityCodeController/getVerify
+2019-09-12 09:22:46 -HTTP METHOD : GET
+2019-09-12 09:22:46 -CLASS_METHOD : com.fzy.system.controller.VifityCodeController.getVerify2
+2019-09-12 09:22:46 -参数 : [org.apache.shiro.web.servlet.ShiroHttpServletRequest@678384f0, org.apache.shiro.web.servlet.ShiroHttpServletResponse@63bc1cd8]
+2019-09-12 09:22:46 -耗时 : 361
+2019-09-12 09:22:59 -请求地址 : http://127.0.0.1:7070/login
+2019-09-12 09:22:59 -HTTP METHOD : POST
+2019-09-12 09:22:59 -CLASS_METHOD : com.fzy.system.controller.LoginController.ajaxLogin
+2019-09-12 09:22:59 -参数 : [admin, 123456, gnge2, org.apache.shiro.web.servlet.ShiroHttpServletRequest@70c36578]
+2019-09-12 09:22:59 -耗时 : 579
+2019-09-12 09:23:00 -请求地址 : http://127.0.0.1:7070/index
+2019-09-12 09:23:00 -HTTP METHOD : GET
+2019-09-12 09:23:00 -CLASS_METHOD : com.fzy.system.controller.LoginController.index
+2019-09-12 09:23:00 -参数 : [{}]
+2019-09-12 09:23:00 -耗时 : 308
+2019-09-12 09:23:00 -请求地址 : http://127.0.0.1:7070/main
+2019-09-12 09:23:00 -HTTP METHOD : GET
+2019-09-12 09:23:00 -CLASS_METHOD : com.fzy.system.controller.LoginController.main
+2019-09-12 09:23:00 -参数 : []
+2019-09-12 09:23:00 -耗时 : 2
+2019-09-12 09:23:01 -请求地址 : http://127.0.0.1:7070/main
+2019-09-12 09:23:01 -HTTP METHOD : GET
+2019-09-12 09:23:01 -CLASS_METHOD : com.fzy.system.controller.LoginController.main
+2019-09-12 09:23:01 -参数 : []
+2019-09-12 09:23:01 -耗时 : 0
+2019-09-12 09:23:05 -请求地址 : http://127.0.0.1:7070/sys/nav
+2019-09-12 09:23:05 -HTTP METHOD : GET
+2019-09-12 09:23:05 -CLASS_METHOD : com.fzy.system.controller.NavController.Nav
+2019-09-12 09:23:05 -参数 : []
+2019-09-12 09:23:05 -耗时 : 1
+2019-09-12 09:23:06 -请求地址 : http://127.0.0.1:7070/sys/nav/list
+2019-09-12 09:23:06 -HTTP METHOD : GET
+2019-09-12 09:23:06 -CLASS_METHOD : com.fzy.system.controller.NavController.list
+2019-09-12 09:23:06 -参数 : [{limit=10, offset=0}]
+2019-09-12 09:23:06 -耗时 : 470
+2019-09-12 09:27:10 -请求地址 : http://127.0.0.1:7070/sys/menu/
+2019-09-12 09:27:10 -HTTP METHOD : GET
+2019-09-12 09:27:10 -CLASS_METHOD : com.fzy.system.controller.MenuController.menu
+2019-09-12 09:27:10 -参数 : [{}]
+2019-09-12 09:27:10 -耗时 : 1
+2019-09-12 09:27:10 -请求地址 : http://127.0.0.1:7070/sys/menu/list
+2019-09-12 09:27:10 -HTTP METHOD : GET
+2019-09-12 09:27:10 -CLASS_METHOD : com.fzy.system.controller.MenuController.list
+2019-09-12 09:27:10 -参数 : [{sort=order_num}]
+2019-09-12 09:27:10 -耗时 : 47
+2019-09-12 09:27:30 -请求地址 : http://127.0.0.1:7070/sys/menu/add/1
+2019-09-12 09:27:30 -HTTP METHOD : GET
+2019-09-12 09:27:30 -CLASS_METHOD : com.fzy.system.controller.MenuController.add
+2019-09-12 09:27:30 -参数 : [{}, 1]
+2019-09-12 09:27:30 -耗时 : 7
+2019-09-12 09:27:43 -请求地址 : http://127.0.0.1:7070/sys/menu/save
+2019-09-12 09:27:43 -HTTP METHOD : POST
+2019-09-12 09:27:43 -CLASS_METHOD : com.fzy.system.controller.MenuController.save
+2019-09-12 09:27:43 -参数 : [MenuDO{menuId=null, parentId=1, name='服务项目', url='', perms='', type=1, icon='', orderNum=null, gmtCreate=null, gmtModified=null}]
+2019-09-12 09:27:44 -耗时 : 313
+2019-09-12 09:27:44 -请求地址 : http://127.0.0.1:7070/sys/menu/list
+2019-09-12 09:27:44 -HTTP METHOD : GET
+2019-09-12 09:27:44 -CLASS_METHOD : com.fzy.system.controller.MenuController.list
+2019-09-12 09:27:44 -参数 : [{sort=order_num}]
+2019-09-12 09:27:44 -耗时 : 14
+2019-09-12 09:49:45 -请求地址 : http://127.0.0.1:7070/sys/menu/
+2019-09-12 09:49:45 -HTTP METHOD : GET
+2019-09-12 09:49:45 -CLASS_METHOD : com.fzy.system.controller.MenuController.menu
+2019-09-12 09:49:45 -参数 : [{}]
+2019-09-12 09:49:45 -耗时 : 1
+2019-09-12 09:49:45 -请求地址 : http://127.0.0.1:7070/sys/menu/list
+2019-09-12 09:49:45 -HTTP METHOD : GET
+2019-09-12 09:49:45 -CLASS_METHOD : com.fzy.system.controller.MenuController.list
+2019-09-12 09:49:45 -参数 : [{sort=order_num}]
+2019-09-12 09:49:45 -耗时 : 12
+2019-09-12 09:49:50 -请求地址 : http://127.0.0.1:7070/common/generator
+2019-09-12 09:49:50 -HTTP METHOD : GET
+2019-09-12 09:49:50 -CLASS_METHOD : com.fzy.common.controller.GeneratorController.generator
+2019-09-12 09:49:50 -参数 : []
+2019-09-12 09:49:50 -耗时 : 1
+2019-09-12 09:49:50 -请求地址 : http://127.0.0.1:7070/common/generator/list
+2019-09-12 09:49:50 -HTTP METHOD : GET
+2019-09-12 09:49:50 -CLASS_METHOD : com.fzy.common.controller.GeneratorController.list
+2019-09-12 09:49:50 -参数 : []
+2019-09-12 09:49:50 -耗时 : 189
+2019-09-12 09:49:56 -请求地址 : http://127.0.0.1:7070/common/generator/edit
+2019-09-12 09:49:56 -HTTP METHOD : GET
+2019-09-12 09:49:56 -CLASS_METHOD : com.fzy.common.controller.GeneratorController.edit
+2019-09-12 09:49:56 -参数 : [{}]
+2019-09-12 09:49:56 -耗时 : 645
+2019-09-12 09:50:07 -请求地址 : http://127.0.0.1:7070/common/generator/update
+2019-09-12 09:50:07 -HTTP METHOD : POST
+2019-09-12 09:50:07 -CLASS_METHOD : com.fzy.common.controller.GeneratorController.update
+2019-09-12 09:50:07 -参数 : [{author=Wang Yanke, email=waittoforyou521@163.com, package=com.fzy.sys, autoRemovePre=true, tablePrefix=sys_}]
+2019-09-12 09:50:07 -耗时 : 15
+2019-09-12 09:50:12 -请求地址 : http://127.0.0.1:7070/common/generator/code/sys_project
+2019-09-12 09:50:12 -HTTP METHOD : GET
+2019-09-12 09:50:12 -CLASS_METHOD : com.fzy.common.controller.GeneratorController.code
+2019-09-12 09:50:12 -参数 : [org.apache.shiro.web.servlet.ShiroHttpServletRequest@428bea38, org.apache.shiro.web.servlet.ShiroHttpServletResponse@47992a17, sys_project]
+2019-09-12 09:50:14 -耗时 : 2369
+2019-09-12 10:06:15 -请求地址 : http://127.0.0.1:7070/common/generator/edit
+2019-09-12 10:06:15 -HTTP METHOD : GET
+2019-09-12 10:06:15 -CLASS_METHOD : com.fzy.common.controller.GeneratorController.edit
+2019-09-12 10:06:15 -参数 : [{}]
+2019-09-12 10:06:15 -耗时 : 4
+2019-09-12 10:07:01 -请求地址 : http://127.0.0.1:7070/common/generator
+2019-09-12 10:07:01 -HTTP METHOD : GET
+2019-09-12 10:07:01 -CLASS_METHOD : com.fzy.common.controller.GeneratorController.generator
+2019-09-12 10:07:01 -参数 : []
+2019-09-12 10:07:01 -耗时 : 1
+2019-09-12 10:07:01 -请求地址 : http://127.0.0.1:7070/common/generator/list
+2019-09-12 10:07:01 -HTTP METHOD : GET
+2019-09-12 10:07:01 -CLASS_METHOD : com.fzy.common.controller.GeneratorController.list
+2019-09-12 10:07:01 -参数 : []
+2019-09-12 10:07:01 -耗时 : 5
+2019-09-12 10:07:05 -请求地址 : http://127.0.0.1:7070/common/generator/code/project_server
+2019-09-12 10:07:05 -HTTP METHOD : GET
+2019-09-12 10:07:05 -CLASS_METHOD : com.fzy.common.controller.GeneratorController.code
+2019-09-12 10:07:05 -参数 : [org.apache.shiro.web.servlet.ShiroHttpServletRequest@5c93ee00, org.apache.shiro.web.servlet.ShiroHttpServletResponse@194e3465, project_server]
+2019-09-12 10:07:05 -耗时 : 152
+2019-09-12 10:07:42 -请求地址 : http://127.0.0.1:7070/common/generator/edit
+2019-09-12 10:07:42 -HTTP METHOD : GET
+2019-09-12 10:07:42 -CLASS_METHOD : com.fzy.common.controller.GeneratorController.edit
+2019-09-12 10:07:42 -参数 : [{}]
+2019-09-12 10:07:42 -耗时 : 5
+2019-09-12 10:07:48 -请求地址 : http://127.0.0.1:7070/common/generator/update
+2019-09-12 10:07:48 -HTTP METHOD : POST
+2019-09-12 10:07:48 -CLASS_METHOD : com.fzy.common.controller.GeneratorController.update
+2019-09-12 10:07:48 -参数 : [{author=Wang Yanke, email=waittoforyou521@163.com, package=com.fzy.project, autoRemovePre=true, tablePrefix=sys_}]
+2019-09-12 10:07:48 -耗时 : 4
+2019-09-12 10:07:53 -请求地址 : http://127.0.0.1:7070/common/generator/code/project_server
+2019-09-12 10:07:53 -HTTP METHOD : GET
+2019-09-12 10:07:53 -CLASS_METHOD : com.fzy.common.controller.GeneratorController.code
+2019-09-12 10:07:53 -参数 : [org.apache.shiro.web.servlet.ShiroHttpServletRequest@3b22edaa, org.apache.shiro.web.servlet.ShiroHttpServletResponse@760d2fa, project_server]
+2019-09-12 10:07:54 -耗时 : 143
+2019-09-12 10:10:49 -请求地址 : http://127.0.0.1:7070/sys/menu/edit/106
+2019-09-12 10:10:49 -HTTP METHOD : GET
+2019-09-12 10:10:49 -CLASS_METHOD : com.fzy.system.controller.MenuController.edit
+2019-09-12 10:10:49 -参数 : [{}, 106]
+2019-09-12 10:10:49 -耗时 : 10
+2019-09-12 10:11:03 -请求地址 : http://127.0.0.1:7070/sys/menu/update
+2019-09-12 10:11:03 -HTTP METHOD : POST
+2019-09-12 10:11:03 -CLASS_METHOD : com.fzy.system.controller.MenuController.update
+2019-09-12 10:11:03 -参数 : [MenuDO{menuId=106, parentId=1, name='服务项目', url='/project/server', perms='project:server:server', type=1, icon='', orderNum=null, gmtCreate=null, gmtModified=null}]
+2019-09-12 10:11:04 -耗时 : 120
+2019-09-12 10:11:04 -请求地址 : http://127.0.0.1:7070/sys/menu/list
+2019-09-12 10:11:04 -HTTP METHOD : GET
+2019-09-12 10:11:04 -CLASS_METHOD : com.fzy.system.controller.MenuController.list
+2019-09-12 10:11:04 -参数 : [{sort=order_num}]
+2019-09-12 10:11:04 -耗时 : 11
+2019-09-12 10:11:11 -请求地址 : http://127.0.0.1:7070/sys/menu/add/106
+2019-09-12 10:11:11 -HTTP METHOD : GET
+2019-09-12 10:11:11 -CLASS_METHOD : com.fzy.system.controller.MenuController.add
+2019-09-12 10:11:11 -参数 : [{}, 106]
+2019-09-12 10:11:11 -耗时 : 11
+2019-09-12 10:11:25 -请求地址 : http://127.0.0.1:7070/sys/menu/save
+2019-09-12 10:11:25 -HTTP METHOD : POST
+2019-09-12 10:11:25 -CLASS_METHOD : com.fzy.system.controller.MenuController.save
+2019-09-12 10:11:25 -参数 : [MenuDO{menuId=null, parentId=106, name='添加', url='', perms='project:server:add', type=2, icon='', orderNum=null, gmtCreate=null, gmtModified=null}]
+2019-09-12 10:11:25 -耗时 : 73
+2019-09-12 10:11:25 -请求地址 : http://127.0.0.1:7070/sys/menu/list
+2019-09-12 10:11:25 -HTTP METHOD : GET
+2019-09-12 10:11:25 -CLASS_METHOD : com.fzy.system.controller.MenuController.list
+2019-09-12 10:11:25 -参数 : [{sort=order_num}]
+2019-09-12 10:11:25 -耗时 : 13
+2019-09-12 10:11:30 -请求地址 : http://127.0.0.1:7070/sys/menu/add/106
+2019-09-12 10:11:30 -HTTP METHOD : GET
+2019-09-12 10:11:30 -CLASS_METHOD : com.fzy.system.controller.MenuController.add
+2019-09-12 10:11:30 -参数 : [{}, 106]
+2019-09-12 10:11:30 -耗时 : 7
+2019-09-12 10:11:45 -请求地址 : http://127.0.0.1:7070/sys/menu/save
+2019-09-12 10:11:45 -HTTP METHOD : POST
+2019-09-12 10:11:45 -CLASS_METHOD : com.fzy.system.controller.MenuController.save
+2019-09-12 10:11:45 -参数 : [MenuDO{menuId=null, parentId=106, name='修改', url='', perms='project:server:edit', type=2, icon='', orderNum=null, gmtCreate=null, gmtModified=null}]
+2019-09-12 10:11:45 -耗时 : 86
+2019-09-12 10:11:45 -请求地址 : http://127.0.0.1:7070/sys/menu/list
+2019-09-12 10:11:45 -HTTP METHOD : GET
+2019-09-12 10:11:45 -CLASS_METHOD : com.fzy.system.controller.MenuController.list
+2019-09-12 10:11:45 -参数 : [{sort=order_num}]
+2019-09-12 10:11:45 -耗时 : 29
+2019-09-12 10:11:51 -请求地址 : http://127.0.0.1:7070/sys/menu/add/106
+2019-09-12 10:11:51 -HTTP METHOD : GET
+2019-09-12 10:11:51 -CLASS_METHOD : com.fzy.system.controller.MenuController.add
+2019-09-12 10:11:51 -参数 : [{}, 106]
+2019-09-12 10:11:51 -耗时 : 10
+2019-09-12 10:12:09 -请求地址 : http://127.0.0.1:7070/sys/menu/save
+2019-09-12 10:12:09 -HTTP METHOD : POST
+2019-09-12 10:12:09 -CLASS_METHOD : com.fzy.system.controller.MenuController.save
+2019-09-12 10:12:09 -参数 : [MenuDO{menuId=null, parentId=106, name='删除', url='', perms='project:server:remove', type=2, icon='', orderNum=null, gmtCreate=null, gmtModified=null}]
+2019-09-12 10:12:09 -耗时 : 87
+2019-09-12 10:12:09 -请求地址 : http://127.0.0.1:7070/sys/menu/list
+2019-09-12 10:12:09 -HTTP METHOD : GET
+2019-09-12 10:12:09 -CLASS_METHOD : com.fzy.system.controller.MenuController.list
+2019-09-12 10:12:09 -参数 : [{sort=order_num}]
+2019-09-12 10:12:09 -耗时 : 7
+2019-09-12 10:17:02 -请求地址 : http://127.0.0.1:7070/sys/menu/add/106
+2019-09-12 10:17:02 -HTTP METHOD : GET
+2019-09-12 10:17:02 -CLASS_METHOD : com.fzy.system.controller.MenuController.add
+2019-09-12 10:17:02 -参数 : [{}, 106]
+2019-09-12 10:17:02 -耗时 : 5
+2019-09-12 10:17:25 -请求地址 : http://127.0.0.1:7070/sys/menu/save
+2019-09-12 10:17:25 -HTTP METHOD : POST
+2019-09-12 10:17:25 -CLASS_METHOD : com.fzy.system.controller.MenuController.save
+2019-09-12 10:17:25 -参数 : [MenuDO{menuId=null, parentId=106, name='banner添加', url='', perms='project:server:addBan', type=2, icon='', orderNum=null, gmtCreate=null, gmtModified=null}]
+2019-09-12 10:17:25 -耗时 : 59
+2019-09-12 10:17:25 -请求地址 : http://127.0.0.1:7070/sys/menu/list
+2019-09-12 10:17:25 -HTTP METHOD : GET
+2019-09-12 10:17:25 -CLASS_METHOD : com.fzy.system.controller.MenuController.list
+2019-09-12 10:17:25 -参数 : [{sort=order_num}]
+2019-09-12 10:17:25 -耗时 : 7
+2019-09-12 10:17:30 -请求地址 : http://127.0.0.1:7070/sys/menu/add/107
+2019-09-12 10:17:30 -HTTP METHOD : GET
+2019-09-12 10:17:30 -CLASS_METHOD : com.fzy.system.controller.MenuController.add
+2019-09-12 10:17:30 -参数 : [{}, 107]
+2019-09-12 10:17:30 -耗时 : 4
+2019-09-12 10:17:53 -请求地址 : http://127.0.0.1:7070/sys/menu/save
+2019-09-12 10:17:53 -HTTP METHOD : POST
+2019-09-12 10:17:53 -CLASS_METHOD : com.fzy.system.controller.MenuController.save
+2019-09-12 10:17:53 -参数 : [MenuDO{menuId=null, parentId=107, name='banner列表', url='', perms='project:server:banner', type=2, icon='', orderNum=null, gmtCreate=null, gmtModified=null}]
+2019-09-12 10:17:53 -耗时 : 42
+2019-09-12 10:17:53 -请求地址 : http://127.0.0.1:7070/sys/menu/list
+2019-09-12 10:17:53 -HTTP METHOD : GET
+2019-09-12 10:17:53 -CLASS_METHOD : com.fzy.system.controller.MenuController.list
+2019-09-12 10:17:53 -参数 : [{sort=order_num}]
+2019-09-12 10:17:53 -耗时 : 8
+2019-09-12 10:18:06 -请求地址 : http://127.0.0.1:7070/sys/menu/edit/111
+2019-09-12 10:18:06 -HTTP METHOD : GET
+2019-09-12 10:18:06 -CLASS_METHOD : com.fzy.system.controller.MenuController.edit
+2019-09-12 10:18:06 -参数 : [{}, 111]
+2019-09-12 10:18:06 -耗时 : 14
+2019-09-12 10:18:14 -请求地址 : http://127.0.0.1:7070/sys/menu/remove
+2019-09-12 10:18:14 -HTTP METHOD : POST
+2019-09-12 10:18:14 -CLASS_METHOD : com.fzy.system.controller.MenuController.remove
+2019-09-12 10:18:14 -参数 : [111]
+2019-09-12 10:18:14 -耗时 : 44
+2019-09-12 10:18:14 -请求地址 : http://127.0.0.1:7070/sys/menu/list
+2019-09-12 10:18:14 -HTTP METHOD : GET
+2019-09-12 10:18:14 -CLASS_METHOD : com.fzy.system.controller.MenuController.list
+2019-09-12 10:18:14 -参数 : [{sort=order_num}]
+2019-09-12 10:18:14 -耗时 : 7
+2019-09-12 10:18:20 -请求地址 : http://127.0.0.1:7070/sys/menu/add/106
+2019-09-12 10:18:20 -HTTP METHOD : GET
+2019-09-12 10:18:20 -CLASS_METHOD : com.fzy.system.controller.MenuController.add
+2019-09-12 10:18:20 -参数 : [{}, 106]
+2019-09-12 10:18:20 -耗时 : 9
+2019-09-12 10:18:37 -请求地址 : http://127.0.0.1:7070/sys/menu/save
+2019-09-12 10:18:37 -HTTP METHOD : POST
+2019-09-12 10:18:37 -CLASS_METHOD : com.fzy.system.controller.MenuController.save
+2019-09-12 10:18:37 -参数 : [MenuDO{menuId=null, parentId=106, name='banner列表', url='', perms='project:server:banner', type=2, icon='', orderNum=null, gmtCreate=null, gmtModified=null}]
+2019-09-12 10:18:37 -耗时 : 44
+2019-09-12 10:18:37 -请求地址 : http://127.0.0.1:7070/sys/menu/list
+2019-09-12 10:18:37 -HTTP METHOD : GET
+2019-09-12 10:18:37 -CLASS_METHOD : com.fzy.system.controller.MenuController.list
+2019-09-12 10:18:37 -参数 : [{sort=order_num}]
+2019-09-12 10:18:37 -耗时 : 8
+2019-09-12 10:20:06 -请求地址 : http://127.0.0.1:7070/sys/role
+2019-09-12 10:20:06 -HTTP METHOD : GET
+2019-09-12 10:20:06 -CLASS_METHOD : com.fzy.system.controller.RoleController.role
+2019-09-12 10:20:06 -参数 : []
+2019-09-12 10:20:06 -耗时 : 1
+2019-09-12 10:20:06 -请求地址 : http://127.0.0.1:7070/sys/role/list
+2019-09-12 10:20:06 -HTTP METHOD : GET
+2019-09-12 10:20:06 -CLASS_METHOD : com.fzy.system.controller.RoleController.list
+2019-09-12 10:20:06 -参数 : []
+2019-09-12 10:20:06 -耗时 : 18
+2019-09-12 10:20:09 -请求地址 : http://127.0.0.1:7070/sys/role/edit/1
+2019-09-12 10:20:09 -HTTP METHOD : GET
+2019-09-12 10:20:09 -CLASS_METHOD : com.fzy.system.controller.RoleController.edit
+2019-09-12 10:20:09 -参数 : [1, {}]
+2019-09-12 10:20:09 -耗时 : 6
+2019-09-12 10:20:09 -请求地址 : http://127.0.0.1:7070/sys/menu/tree/1
+2019-09-12 10:20:09 -HTTP METHOD : GET
+2019-09-12 10:20:09 -CLASS_METHOD : com.fzy.system.controller.MenuController.tree
+2019-09-12 10:20:09 -参数 : [1]
+2019-09-12 10:20:09 -耗时 : 8
+2019-09-12 10:20:15 -请求地址 : http://127.0.0.1:7070/sys/role/update
+2019-09-12 10:20:15 -HTTP METHOD : POST
+2019-09-12 10:20:15 -CLASS_METHOD : com.fzy.system.controller.RoleController.update
+2019-09-12 10:20:15 -参数 : [RoleDO{roleId=1, roleName='超级用户角色', roleSign='null', remark='拥有最高权限', userIdCreate=null, gmtCreate=null, gmtModified=null, menuIds=[92, 57, 30, 29, 28, 72, 48, 76, 75, 74, 62, 56, 55, 15, 26, 25, 24, 14, 13, 12, 61, 22, 21, 20, 105, 104, 103, 102, 101, 100, 71, 27, 91, 77, 73, 7, 6, 2, 3, 99, 106, 112, 110, 109, 108, 107, 1, -1]}]
+2019-09-12 10:20:15 -耗时 : 145
+2019-09-12 10:20:15 -请求地址 : http://127.0.0.1:7070/sys/role/list
+2019-09-12 10:20:15 -HTTP METHOD : GET
+2019-09-12 10:20:15 -CLASS_METHOD : com.fzy.system.controller.RoleController.list
+2019-09-12 10:20:15 -参数 : []
+2019-09-12 10:20:15 -耗时 : 2
+2019-09-12 10:20:19 -请求地址 : http://127.0.0.1:7070/sys/role
+2019-09-12 10:20:19 -HTTP METHOD : GET
+2019-09-12 10:20:19 -CLASS_METHOD : com.fzy.system.controller.RoleController.role
+2019-09-12 10:20:19 -参数 : []
+2019-09-12 10:20:19 -耗时 : 2
+2019-09-12 10:20:19 -请求地址 : http://127.0.0.1:7070/sys/role/list
+2019-09-12 10:20:19 -HTTP METHOD : GET
+2019-09-12 10:20:19 -CLASS_METHOD : com.fzy.system.controller.RoleController.list
+2019-09-12 10:20:19 -参数 : []
+2019-09-12 10:20:19 -耗时 : 2
+2019-09-12 10:20:20 -请求地址 : http://127.0.0.1:7070/
+2019-09-12 10:20:20 -HTTP METHOD : GET
+2019-09-12 10:20:20 -CLASS_METHOD : com.fzy.system.controller.LoginController.welcome
+2019-09-12 10:20:20 -参数 : [{}]
+2019-09-12 10:20:20 -耗时 : 1
+2019-09-12 10:20:20 -请求地址 : http://127.0.0.1:7070/login
+2019-09-12 10:20:20 -HTTP METHOD : GET
+2019-09-12 10:20:20 -CLASS_METHOD : com.fzy.system.controller.LoginController.login
+2019-09-12 10:20:20 -参数 : []
+2019-09-12 10:20:20 -耗时 : 1
+2019-09-12 10:20:20 -请求地址 : http://127.0.0.1:7070/vifityCodeController/getVerify
+2019-09-12 10:20:20 -HTTP METHOD : GET
+2019-09-12 10:20:20 -CLASS_METHOD : com.fzy.system.controller.VifityCodeController.getVerify2
+2019-09-12 10:20:20 -参数 : [org.apache.shiro.web.servlet.ShiroHttpServletRequest@19321ec6, org.apache.shiro.web.servlet.ShiroHttpServletResponse@c1745e1]
+2019-09-12 10:20:20 -耗时 : 24
+2019-09-12 10:20:29 -请求地址 : http://127.0.0.1:7070/login
+2019-09-12 10:20:29 -HTTP METHOD : POST
+2019-09-12 10:20:29 -CLASS_METHOD : com.fzy.system.controller.LoginController.ajaxLogin
+2019-09-12 10:20:29 -参数 : [admin, 123456, wbdb7, org.apache.shiro.web.servlet.ShiroHttpServletRequest@24ceb8f1]
+2019-09-12 10:20:29 -耗时 : 6
+2019-09-12 10:20:29 -请求地址 : http://127.0.0.1:7070/index
+2019-09-12 10:20:29 -HTTP METHOD : GET
+2019-09-12 10:20:29 -CLASS_METHOD : com.fzy.system.controller.LoginController.index
+2019-09-12 10:20:29 -参数 : [{}]
+2019-09-12 10:20:29 -耗时 : 14
+2019-09-12 10:20:29 -请求地址 : http://127.0.0.1:7070/main
+2019-09-12 10:20:29 -HTTP METHOD : GET
+2019-09-12 10:20:29 -CLASS_METHOD : com.fzy.system.controller.LoginController.main
+2019-09-12 10:20:29 -参数 : []
+2019-09-12 10:20:29 -耗时 : 0
+2019-09-12 10:20:30 -请求地址 : http://127.0.0.1:7070/main
+2019-09-12 10:20:30 -HTTP METHOD : GET
+2019-09-12 10:20:30 -CLASS_METHOD : com.fzy.system.controller.LoginController.main
+2019-09-12 10:20:30 -参数 : []
+2019-09-12 10:20:30 -耗时 : 1
+2019-09-12 10:20:56 -Starting ManagerMain on PC-20120727WMQF with PID 3448 (G:\hn_jlxh\jlxh-manager\target\classes started by Administrator in G:\hn_jlxh\jlxh-manager)
+2019-09-12 10:20:56 -The following profiles are active: dev
+2019-09-12 10:20:57 -Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-09-12 10:20:57 -Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-09-12 10:20:57 -Finished Spring Data repository scanning in 22ms. Found 0 repository interfaces.
+2019-09-12 10:20:58 -Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$bcec86ec] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-12 10:20:58 -Bean 'shiroConfig' of type [com.fzy.system.config.ShiroConfig$$EnhancerBySpringCGLIB$$84b8b401] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-12 10:20:58 -Bean 'userRealm' of type [com.fzy.system.shiro.UserRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-12 10:20:59 -No configuration found. Configuring ehcache from ehcache-failsafe.xml  found in the classpath: jar:file:/D:/Program%20Files%20(x86)/Apche/repository/net/sf/ehcache/ehcache/2.10.6/ehcache-2.10.6.jar!/ehcache-failsafe.xml
+2019-09-12 10:20:59 -Bean 'cacheManager2' of type [net.sf.ehcache.CacheManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-12 10:20:59 -Bean 'ehCacheManager' of type [org.apache.shiro.cache.ehcache.EhCacheManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-12 10:20:59 -Cache with name 'com.fzy.system.shiro.UserRealm.authorizationCache' does not yet exist.  Creating now.
+2019-09-12 10:20:59 -Added EhCache named [com.fzy.system.shiro.UserRealm.authorizationCache]
+2019-09-12 10:20:59 -Bean 'sessionDAO' of type [org.apache.shiro.session.mgt.eis.MemorySessionDAO] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-12 10:20:59 -Bean 'sessionManager' of type [org.apache.shiro.web.session.mgt.DefaultWebSessionManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-12 10:20:59 -Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-12 10:20:59 -Bean 'authorizationAttributeSourceAdvisor' of type [org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-12 10:21:00 -Tomcat initialized with port(s): 7070 (http)
+2019-09-12 10:21:00 -Initializing ProtocolHandler ["http-nio-7070"]
+2019-09-12 10:21:00 -Starting service [Tomcat]
+2019-09-12 10:21:00 -Starting Servlet engine: [Apache Tomcat/9.0.14]
+2019-09-12 10:21:00 -The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_171\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/Java/jdk1.8.0_171/bin/../jre/bin/server;C:/Program Files/Java/jdk1.8.0_171/bin/../jre/bin;C:/Program Files/Java/jdk1.8.0_171/bin/../jre/lib/amd64;C:\Program Files\Java\jdk1.8.0_171\bin;C:\Program Files\Java\jdk1.8.0_171\jre\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;G:\xftp\;G:\xshell\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;D:\phpStudy\PHPTutorial\php\php-5.6.27-nts;D:\composer;C:\Program Files\Git\cmd;C:\Program Files\MySQL\MySQL Server 5.5\bin;C:\Users\Administrator.PC-20120727WMQF\AppData\Roaming\Composer\vendor\bin;C:\Users\Administrator.PC-20120727WMQF\Desktop;;.]
+2019-09-12 10:21:00 -Initializing Spring embedded WebApplicationContext
+2019-09-12 10:21:00 -Root WebApplicationContext: initialization completed in 3541 ms
+2019-09-12 10:21:00 -Filter xssFilter was not registered (disabled)
+2019-09-12 10:21:01 -{dataSource-1} inited
+2019-09-12 10:21:02 -Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-12 10:21:02 -[THYMELEAF][main] Template Mode 'LEGACYHTML5' is deprecated. Using Template Mode 'HTML' instead.
+2019-09-12 10:21:04 -Starting ProtocolHandler ["http-nio-7070"]
+2019-09-12 10:21:04 -Tomcat started on port(s): 7070 (http) with context path ''
+2019-09-12 10:21:04 -Started ManagerMain in 8.538 seconds (JVM running for 9.393)
+2019-09-12 10:21:29 -Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-09-12 10:21:29 -Initializing Servlet 'dispatcherServlet'
+2019-09-12 10:21:29 -Completed initialization in 19 ms
+2019-09-12 10:21:29 -Enabling session validation scheduler...
+2019-09-12 10:21:29 -请求地址 : http://127.0.0.1:7070/login;JSESSIONID=9bf8fdb5-2d12-4cf7-9760-4d7cb8b9cfdb
+2019-09-12 10:21:29 -HTTP METHOD : GET
+2019-09-12 10:21:29 -CLASS_METHOD : com.fzy.system.controller.LoginController.login
+2019-09-12 10:21:29 -参数 : []
+2019-09-12 10:21:29 -耗时 : 4
+2019-09-12 10:21:30 -请求地址 : http://127.0.0.1:7070/vifityCodeController/getVerify
+2019-09-12 10:21:30 -HTTP METHOD : GET
+2019-09-12 10:21:30 -CLASS_METHOD : com.fzy.system.controller.VifityCodeController.getVerify2
+2019-09-12 10:21:30 -参数 : [org.apache.shiro.web.servlet.ShiroHttpServletRequest@69ce7688, org.apache.shiro.web.servlet.ShiroHttpServletResponse@5be202ee]
+2019-09-12 10:21:30 -耗时 : 244
+2019-09-12 10:21:38 -请求地址 : http://127.0.0.1:7070/login
+2019-09-12 10:21:38 -HTTP METHOD : POST
+2019-09-12 10:21:38 -CLASS_METHOD : com.fzy.system.controller.LoginController.ajaxLogin
+2019-09-12 10:21:38 -参数 : [admin, 123456, enbmp, org.apache.shiro.web.servlet.ShiroHttpServletRequest@781f2a94]
+2019-09-12 10:21:38 -耗时 : 304
+2019-09-12 10:21:39 -请求地址 : http://127.0.0.1:7070/index
+2019-09-12 10:21:39 -HTTP METHOD : GET
+2019-09-12 10:21:39 -CLASS_METHOD : com.fzy.system.controller.LoginController.index
+2019-09-12 10:21:39 -参数 : [{}]
+2019-09-12 10:21:39 -耗时 : 84
+2019-09-12 10:21:39 -请求地址 : http://127.0.0.1:7070/main
+2019-09-12 10:21:39 -HTTP METHOD : GET
+2019-09-12 10:21:39 -CLASS_METHOD : com.fzy.system.controller.LoginController.main
+2019-09-12 10:21:39 -参数 : []
+2019-09-12 10:21:39 -耗时 : 1
+2019-09-12 10:21:39 -请求地址 : http://127.0.0.1:7070/main
+2019-09-12 10:21:39 -HTTP METHOD : GET
+2019-09-12 10:21:39 -CLASS_METHOD : com.fzy.system.controller.LoginController.main
+2019-09-12 10:21:39 -参数 : []
+2019-09-12 10:21:39 -耗时 : 1
+2019-09-12 10:21:41 -请求地址 : http://127.0.0.1:7070/sys/nav
+2019-09-12 10:21:41 -HTTP METHOD : GET
+2019-09-12 10:21:41 -CLASS_METHOD : com.fzy.system.controller.NavController.Nav
+2019-09-12 10:21:41 -参数 : []
+2019-09-12 10:21:41 -耗时 : 1
+2019-09-12 10:21:41 -请求地址 : http://127.0.0.1:7070/sys/nav/list
+2019-09-12 10:21:41 -HTTP METHOD : GET
+2019-09-12 10:21:41 -CLASS_METHOD : com.fzy.system.controller.NavController.list
+2019-09-12 10:21:41 -参数 : [{limit=10, offset=0}]
+2019-09-12 10:21:41 -耗时 : 61
+2019-09-12 10:21:42 -请求地址 : http://127.0.0.1:7070/project/server
+2019-09-12 10:21:42 -HTTP METHOD : GET
+2019-09-12 10:21:42 -CLASS_METHOD : com.fzy.project.controller.ServerController.Server
+2019-09-12 10:21:42 -参数 : []
+2019-09-12 10:21:42 -耗时 : 2
+2019-09-12 10:21:42 -请求地址 : http://127.0.0.1:7070/project/server/list
+2019-09-12 10:21:42 -HTTP METHOD : GET
+2019-09-12 10:21:42 -CLASS_METHOD : com.fzy.project.controller.ServerController.list
+2019-09-12 10:21:42 -参数 : [{limit=10, offset=0}]
+2019-09-12 10:21:42 -Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.apache.ibatis.binding.BindingException: Invalid bound statement (not found): com.fzy.project.dao.ServerDao.list] with root cause
+org.apache.ibatis.binding.BindingException: Invalid bound statement (not found): com.fzy.project.dao.ServerDao.list
+	at org.apache.ibatis.binding.MapperMethod$SqlCommand.<init>(MapperMethod.java:225)
+	at org.apache.ibatis.binding.MapperMethod.<init>(MapperMethod.java:48)
+	at org.apache.ibatis.binding.MapperProxy.cachedMapperMethod(MapperProxy.java:65)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:58)
+	at com.sun.proxy.$Proxy89.list(Unknown Source)
+	at com.fzy.project.service.impl.ServerServiceImpl.list(ServerServiceImpl.java:27)
+	at com.fzy.project.controller.ServerController.list(ServerController.java:56)
+	at com.fzy.project.controller.ServerController$$FastClassBySpringCGLIB$$4c748b66.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:749)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:56)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:88)
+	at com.fzy.common.aspect.WebLogAspect.doAround(WebLogAspect.java:76)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:644)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:633)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:70)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.adapter.AfterReturningAdviceInterceptor.invoke(AfterReturningAdviceInterceptor.java:55)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.apache.shiro.spring.security.interceptor.AopAllianceAnnotationsAuthorizingMethodInterceptor$1.proceed(AopAllianceAnnotationsAuthorizingMethodInterceptor.java:82)
+	at org.apache.shiro.authz.aop.AuthorizingMethodInterceptor.invoke(AuthorizingMethodInterceptor.java:39)
+	at org.apache.shiro.spring.security.interceptor.AopAllianceAnnotationsAuthorizingMethodInterceptor.invoke(AopAllianceAnnotationsAuthorizingMethodInterceptor.java:115)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:93)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:688)
+	at com.fzy.project.controller.ServerController$$EnhancerBySpringCGLIB$$6dd4aa4a.list(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:189)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:800)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1038)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:897)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:61)
+	at org.apache.shiro.web.servlet.AdviceFilter.executeChain(AdviceFilter.java:108)
+	at org.apache.shiro.web.servlet.AdviceFilter.doFilterInternal(AdviceFilter.java:137)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:66)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.executeChain(AbstractShiroFilter.java:449)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter$1.call(AbstractShiroFilter.java:365)
+	at org.apache.shiro.subject.support.SubjectCallable.doCall(SubjectCallable.java:90)
+	at org.apache.shiro.subject.support.SubjectCallable.call(SubjectCallable.java:83)
+	at org.apache.shiro.subject.support.DelegatingSubject.execute(DelegatingSubject.java:383)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.doFilterInternal(AbstractShiroFilter.java:362)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:123)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:834)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1417)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2019-09-12 10:22:38 -请求地址 : http://127.0.0.1:7070/project/server/add
+2019-09-12 10:22:38 -HTTP METHOD : GET
+2019-09-12 10:22:38 -CLASS_METHOD : com.fzy.project.controller.ServerController.add
+2019-09-12 10:22:38 -参数 : []
+2019-09-12 10:22:38 -耗时 : 1

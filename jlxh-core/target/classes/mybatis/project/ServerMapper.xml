@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.fzy.project.dao.ServerDao">
+
+	<select id="get" resultType="com.fzy.project.domain.ServerDO">
+		select `id`,`serve_name`,`server_content`,`serve_name1`,`url`,`sort`,`server_content1`,`server_title_image`,`introduce`,`type`,`create_time`,`is_delete` from project_server where id = #{value}
+	</select>
+
+	<select id="list" resultType="com.fzy.project.domain.ServerDO">
+		select `id`,`serve_name`,`server_content`,`serve_name1`,`url`,`sort`,`server_content1`,`server_title_image`,`introduce`,`type`,`create_time`,`is_delete` from project_server
+        <where>  
+		  		  <if test="id != null and id != ''"> and id = #{id} </if>
+		  		  <if test="serveName != null and serveName != ''"> and serve_name = #{serveName} </if>
+		  		  <if test="serverContent != null and serverContent != ''"> and server_content = #{serverContent} </if>
+		  		  <if test="serveName1 != null and serveName1 != ''"> and serve_name1 = #{serveName1} </if>
+		  		  <if test="url != null and url != ''"> and url = #{url} </if>
+		  		  <if test="sort != null and sort != ''"> and sort = #{sort} </if>
+		  		  <if test="serverContent1 != null and serverContent1 != ''"> and server_content1 = #{serverContent1} </if>
+		  		  <if test="serverTitleImage != null and serverTitleImage != ''"> and server_title_image = #{serverTitleImage} </if>
+		  		  <if test="introduce != null and introduce != ''"> and introduce = #{introduce} </if>
+		  		  <if test="type != null and type != ''"> and type = #{type} </if>
+		  		  <if test="createTime != null and createTime != ''"> and create_time = #{createTime} </if>
+		  		  <if test="isDelete != null and isDelete != ''"> and is_delete = #{isDelete} </if>
+		  		</where>
+        <choose>
+            <when test="sort != null and sort.trim() != ''">
+                order by ${sort} ${order}
+            </when>
+			<otherwise>
+                order by id desc
+			</otherwise>
+        </choose>
+		<if test="offset != null and limit != null">
+			limit #{offset}, #{limit}
+		</if>
+	</select>
+	
+ 	<select id="count" resultType="int">
+		select count(*) from project_server
+		 <where>  
+		  		  <if test="id != null and id != ''"> and id = #{id} </if>
+		  		  <if test="serveName != null and serveName != ''"> and serve_name = #{serveName} </if>
+		  		  <if test="serverContent != null and serverContent != ''"> and server_content = #{serverContent} </if>
+		  		  <if test="serveName1 != null and serveName1 != ''"> and serve_name1 = #{serveName1} </if>
+		  		  <if test="url != null and url != ''"> and url = #{url} </if>
+		  		  <if test="sort != null and sort != ''"> and sort = #{sort} </if>
+		  		  <if test="serverContent1 != null and serverContent1 != ''"> and server_content1 = #{serverContent1} </if>
+		  		  <if test="serverTitleImage != null and serverTitleImage != ''"> and server_title_image = #{serverTitleImage} </if>
+		  		  <if test="introduce != null and introduce != ''"> and introduce = #{introduce} </if>
+		  		  <if test="type != null and type != ''"> and type = #{type} </if>
+		  		  <if test="createTime != null and createTime != ''"> and create_time = #{createTime} </if>
+		  		  <if test="isDelete != null and isDelete != ''"> and is_delete = #{isDelete} </if>
+		  		</where>
+	</select>
+	 
+	<insert id="save" parameterType="com.fzy.project.domain.ServerDO" useGeneratedKeys="true" keyProperty="id">
+		insert into project_server
+		(
+			`serve_name`, 
+			`server_content`, 
+			`serve_name1`, 
+			`url`, 
+			`sort`, 
+			`server_content1`, 
+			`server_title_image`, 
+			`introduce`, 
+			`type`, 
+			`create_time`, 
+			`is_delete`
+		)
+		values
+		(
+			#{serveName}, 
+			#{serverContent}, 
+			#{serveName1}, 
+			#{url}, 
+			#{sort}, 
+			#{serverContent1}, 
+			#{serverTitleImage}, 
+			#{introduce}, 
+			#{type}, 
+			#{createTime}, 
+			#{isDelete}
+		)
+	</insert>
+	 
+	<update id="update" parameterType="com.fzy.project.domain.ServerDO">
+		update project_server 
+		<set>
+			<if test="serveName != null">`serve_name` = #{serveName}, </if>
+			<if test="serverContent != null">`server_content` = #{serverContent}, </if>
+			<if test="serveName1 != null">`serve_name1` = #{serveName1}, </if>
+			<if test="url != null">`url` = #{url}, </if>
+			<if test="sort != null">`sort` = #{sort}, </if>
+			<if test="serverContent1 != null">`server_content1` = #{serverContent1}, </if>
+			<if test="serverTitleImage != null">`server_title_image` = #{serverTitleImage}, </if>
+			<if test="introduce != null">`introduce` = #{introduce}, </if>
+			<if test="type != null">`type` = #{type}, </if>
+			<if test="createTime != null">`create_time` = #{createTime}, </if>
+			<if test="isDelete != null">`is_delete` = #{isDelete}</if>
+		</set>
+		where id = #{id}
+	</update>
+	
+	<delete id="remove">
+		delete from project_server where id = #{value}
+	</delete>
+	
+	<delete id="batchRemove">
+		delete from project_server where id in 
+		<foreach item="id" collection="array" open="(" separator="," close=")">
+			#{id}
+		</foreach>
+	</delete>
+
+</mapper>

@@ -1,0 +1,22 @@
+{
+  "groups": [
+    {
+      "name": "filedo",
+      "type": "com.fzy.config.FileUploadConfig",
+      "sourceType": "com.fzy.config.FileUploadConfig"
+    }
+  ],
+  "properties": [
+    {
+      "name": "filedo.upload",
+      "type": "java.lang.String",
+      "sourceType": "com.fzy.config.FileUploadConfig"
+    },
+    {
+      "name": "filedo.upload-path",
+      "type": "java.lang.String",
+      "sourceType": "com.fzy.config.FileUploadConfig"
+    }
+  ],
+  "hints": []
+}

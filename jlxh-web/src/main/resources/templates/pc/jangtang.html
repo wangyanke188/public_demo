@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>金色老年网--孝敬网</title>
+<meta name="keywords" content="" />
+<meta name="description" content="金色老年网--孝敬网" />
+<link href="css/style.css" rel="stylesheet">
+<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="js/banner.js"></script>
+<script type="text/javascript" src="js/jquery.SuperSlide2.js"></script>
+<script type="text/javascript" src="js/koala.min.1.5.js"></script>
+<script type="text/javascript">
+$(function(){
+	$(".yScrollListTitle h1").click(function  () {
+		var index=$(this).index(".yScrollListTitle h1");
+		$(this).addClass("yth1click").siblings().removeClass("yth1click");
+		$($(".yScrollListInList")[index]).show().siblings().hide();
+	})
+	$(".yScrollListInList1 ul").css({width:$(".yScrollListInList1 ul li").length*(290+15)+"px"});
+	$(".yScrollListInList2 ul").css({width:$(".yScrollListInList2 ul li").length*(290+15)+"px"});
+	var numwidth=(290+15)*4;
+	$(".yScrollListInList .yScrollListbtnl").click(function(){
+		var obj=$(this).parent(".yScrollListInList").find("ul");
+		if (!(obj.is(":animated"))) {
+			var lefts=parseInt(obj.css("left").slice(0,-2));
+			if(lefts<30){
+				obj.animate({left:lefts+numwidth},1000);
+			}
+		}
+	})
+	$(".yScrollListInList .yScrollListbtnr").click(function(){
+		var obj=$(this).parent(".yScrollListInList").find("ul");
+		var objcds=-(30+(Math.ceil(obj.find("li").length/5)-2)*numwidth);
+		if (!(obj.is(":animated"))) {
+			var lefts=parseInt(obj.css("left").slice(0,-2));
+			if(lefts>objcds){
+				obj.animate({left:lefts-numwidth},1000);
+			}
+		}
+	})
+})
+</script>
+
+	</head>
+	<body>
+	
+	<div class="head1">
+		<div class="w12">
+			<div class="head_left">
+			<img src="images/logo.jpg" />
+		</div>
+	
+		<div class="phone">
+			<a href="#" class="login">登录</a>
+			<a href="#">注册</a>
+		</div>
+		</div>
+		
+	</div>
+	<div class="clear"></div>
+	<div class="nav">
+		<ul class="w12">
+			<li><a href="index.html">网站首页</a></li>
+			<li><a href="about.html">总会简介</a></li>
+			<li><a href="news.html">工作动态</a></li>
+			<li><a href="pinpai.html">金色品牌</a></li>
+			<li><a href="news.html">领导关怀 </a></li>
+			<li><a href="guoqing.html">老龄国情宣传</a></li>
+			<li><a href="news.html">涉老政策</a></li>
+			<li><a href="news.html">助老活动</a></li>
+			<li><a href="news.html">老年大学</a></li>
+			<li><a href="news.html">老年商廊</a></li>
+			<li><a href="news.html">爱心捐赠</a></li>
+			
+		</ul>
+	</div>
+	<div class="clear"></div>
+	<div class="banner">
+  <div class="b-img"><a href="#" style="background:url(images/jtbanner.jpg) center no-repeat;"></a>
+  	<a href="#" style="background:url(images/jtbanner.jpg) center no-repeat;"></a>
+  	<a href="#" style="background:url(images/jtbanner.jpg) center no-repeat;"></a></div>
+  <div class="b-list"></div>
+  <a class="bar-left" href="#"><em></em></a><a class="bar-right" href="#"><em></em></a> </div>
+
+<div class="jieshao">
+	<div class="w12">
+		<div class="title">
+			<h3>金色大讲堂介绍</h3>
+			
+		</div>
+		<div class="js_left">
+			<img src="images/jttup.jpg"/>
+		</div>
+		<div class="js_right">
+			为进一步传承中华民族尊老敬老传统美德，弘扬中华优秀传统文化，倡导孝亲敬老理念，2013年5月，总会创办了《金色大讲堂》高端讲坛栏目，与河南民生频道联合录制播出，共录制播出135期。每月举办现场报告会，先后邀请国家司法部原部长高昌礼，国家民政部原副部长李宝库，中央党校教授、博士生导师刘余莉，山东孔子礼仪文化学校校长金辉，著名传统文化导师、心理学家智然，中国老龄事业发展基金会孝文化传播委员会副主任吕明晰，传统文化名家马仙蕊、王弘錡、靳雅佳、聂振弢、颜景松、闫合作，中医科学院博士彭鑫、董峰，南京中医药大学教授郭立中等一大批重量级名家学者现场授课。省级老领导、总会领导和广大老同志积极参加大讲堂报告会。金色大讲堂聚集了中国优秀传统文化的名家大家授课，理论水平高、讲课生动深刻、内容丰富、感染力强、吸引和教育感动了现场观众和社会各界人士，大家争相参与现场听课和收看电视节目......
+<a href="#">了解详情></a>
+		</div>
+	</div>
+</div>
+
+
+<div class="wutai">
+	<h2><i><img src="images/jticon1.png"/></i>传统文化<a href="#">更多>></a></h2>
+	
+	<ul>
+		<li class="tjtup">
+			<a href="#"><img src="images/jttup1.png"/></a>
+			<span>传统文化--何宝林--《幸福的真谛》</span>
+		</li>
+		<li>
+		<a href="#"><img src="images/jttup2.png"/></a>	
+		<span>传统文化--金辉--《传统文化与幸福人生》</span>
+		</li>
+		<li>
+		<a href="#"><img src="images/jttup2.png"/></a>	
+		<span>传统文化--金辉--《传统文化与幸福人生》</span>
+		</li>
+		<li>
+		<a href="#"><img src="images/jttup2.png"/></a>	
+		<span>传统文化--金辉--《传统文化与幸福人生》</span>
+		</li>
+		<li>
+		<a href="#"><img src="images/jttup2.png"/></a>	
+		<span>传统文化--金辉--《传统文化与幸福人生》</span>
+		</li>
+		<li>
+		<a href="#"><img src="images/jttup2.png"/></a>	
+		<span>传统文化--金辉--《传统文化与幸福人生》</span>
+		</li>
+		<li>
+		<a href="#"><img src="images/jttup2.png"/></a>	
+		<span>传统文化--金辉--《传统文化与幸福人生》</span>
+		</li>
+		
+		
+	</ul>
+	
+</div>
+<div class="wutai">
+	<h2><i><img src="images/jticon2.png"/></i>健康养生<a href="#">更多>></a></h2>
+	
+	<ul>
+		<li class="tjtup">
+			<a href="#"><img src="images/ystup1.png"/></a>
+			<span>养生保健--马仙蕊--《五行人养生》</span>
+		</li>
+		<li>
+		<a href="#"><img src="images/ystup2.png"/></a>	
+		<span>养生保健--董峰--《金秋时节话养心》</span>
+		</li>
+		<li>
+		<a href="#"><img src="images/ystup2.png"/></a>	
+		<span>养生保健--董峰--《金秋时节话养心》</span>
+		</li>
+		<li>
+		<a href="#"><img src="images/ystup2.png"/></a>	
+		<span>养生保健--董峰--《金秋时节话养心》</span>
+		</li>
+		<li>
+		<a href="#"><img src="images/ystup2.png"/></a>	
+		<span>养生保健--董峰--《金秋时节话养心》</span>
+		</li>
+		<li>
+		<a href="#"><img src="images/ystup2.png"/></a>	
+		<span>养生保健--董峰--《金秋时节话养心》</span>
+		</li>
+		<li>
+		<a href="#"><img src="images/ystup2.png"/></a>	
+		<span>养生保健--董峰--《金秋时节话养心》</span>
+		</li>
+		
+		
+	</ul>
+	
+</div>
+
+<div class="clear"></div>
+<div class="jiangshi">
+	
+	<div class="w12">
+		<h3>主讲老师</h3>
+		<div class="yScrollList">
+	<div class="yScrollListTitle"><h1 class="yth1click">传统文化</h1><h1 class="ytitleh12">养生保健</h1></div>
+	<div class="yScrollListIn">
+		<div class="yScrollListInList yScrollListInList1" style="display:block;">
+			<ul>
+				<li>
+					<a href="">
+						<div><img src="images/ren.jpg"></div>
+						<p>传统文化--刘余莉</p>
+						<span>中央党校哲学部教授，伦理学专业博士生导师，对中国传统文化及当代价值，尤其是先秦儒家伦理与西方美德伦理方面有着深入的研究。</span>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<div><img src="images/ren.jpg"></div>
+						<p>传统文化--刘余莉</p>
+						<span>中央党校哲学部教授，伦理学专业博士生导师，对中国传统文化及当代价值，尤其是先秦儒家伦理与西方美德伦理方面有着深入的研究。</span>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<div><img src="images/ren.jpg"></div>
+						<p>传统文化--刘余莉</p>
+						<span>中央党校哲学部教授，伦理学专业博士生导师，对中国传统文化及当代价值，尤其是先秦儒家伦理与西方美德伦理方面有着深入的研究。</span>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<div><img src="images/ren.jpg"></div>
+						<p>传统文化--刘余莉</p>
+						<span>中央党校哲学部教授，伦理学专业博士生导师，对中国传统文化及当代价值，尤其是先秦儒家伦理与西方美德伦理方面有着深入的研究。</span>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<div><img src="images/ren1.jpg"></div>
+						<p>传统文化--刘余莉</p>
+						<span>中央党校哲学部教授，伦理学专业博士生导师，对中国传统文化及当代价值，尤其是先秦儒家伦理与西方美德伦理方面有着深入的研究。</span>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<div><img src="images/ren1.jpg"></div>
+						<p>传统文化--刘余莉</p>
+						<span>中央党校哲学部教授，伦理学专业博士生导师，对中国传统文化及当代价值，尤其是先秦儒家伦理与西方美德伦理方面有着深入的研究。</span>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<div><img src="images/ren1.jpg"></div>
+						<p>传统文化--刘余莉</p>
+						<span>中央党校哲学部教授，伦理学专业博士生导师，对中国传统文化及当代价值，尤其是先秦儒家伦理与西方美德伦理方面有着深入的研究。</span>
+					</a>
+				</li>
+				
+				<li>
+					<a href="">
+						<div><img src="images/ren1.jpg"></div>
+						<p>传统文化--刘余莉</p>
+						<span>中央党校哲学部教授，伦理学专业博士生导师，对中国传统文化及当代价值，尤其是先秦儒家伦理与西方美德伦理方面有着深入的研究。</span>
+					</a>
+				</li>
+				
+
+			</ul>
+			<div class="yScrollListbtn yScrollListbtnl"></div>
+			<div class="yScrollListbtn yScrollListbtnr"></div>
+		</div>
+		<div class="yScrollListInList yScrollListInList2">
+			<ul>
+				<li>
+					<a href="">
+						<div><img src="images/ren3.jpg"></div>
+						<p>传统文化--刘余莉</p>
+						<span>中央党校哲学部教授，伦理学专业博士生导师，对中国传统文化及当代价值，尤其是先秦儒家伦理与西方美德伦理方面有着深入的研究。</span>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<div><img src="images/ren3.jpg"></div>
+						<p>传统文化--刘余莉</p>
+						<span>中央党校哲学部教授，伦理学专业博士生导师，对中国传统文化及当代价值，尤其是先秦儒家伦理与西方美德伦理方面有着深入的研究。</span>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<div><img src="images/ren3.jpg"></div>
+						<p>传统文化--刘余莉</p>
+						<span>中央党校哲学部教授，伦理学专业博士生导师，对中国传统文化及当代价值，尤其是先秦儒家伦理与西方美德伦理方面有着深入的研究。</span>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<div><img src="images/ren3.jpg"></div>
+						<p>传统文化--刘余莉</p>
+						<span>中央党校哲学部教授，伦理学专业博士生导师，对中国传统文化及当代价值，尤其是先秦儒家伦理与西方美德伦理方面有着深入的研究。</span>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<div><img src="images/ren4.jpg"></div>
+						<p>传统文化--刘余莉</p>
+						<span>中央党校哲学部教授，伦理学专业博士生导师，对中国传统文化及当代价值，尤其是先秦儒家伦理与西方美德伦理方面有着深入的研究。</span>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<div><img src="images/ren4.jpg"></div>
+						<p>传统文化--刘余莉</p>
+						<span>中央党校哲学部教授，伦理学专业博士生导师，对中国传统文化及当代价值，尤其是先秦儒家伦理与西方美德伦理方面有着深入的研究。</span>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<div><img src="images/ren4.jpg"></div>
+						<p>传统文化--刘余莉</p>
+						<span>中央党校哲学部教授，伦理学专业博士生导师，对中国传统文化及当代价值，尤其是先秦儒家伦理与西方美德伦理方面有着深入的研究。</span>
+					</a>
+				</li>
+				
+				<li>
+					<a href="">
+						<div><img src="images/ren4.jpg"></div>
+						<p>传统文化--刘余莉</p>
+						<span>中央党校哲学部教授，伦理学专业博士生导师，对中国传统文化及当代价值，尤其是先秦儒家伦理与西方美德伦理方面有着深入的研究。</span>
+					</a>
+				</li>
+			</ul>
+			<div class="yScrollListbtn yScrollListbtnl"></div>
+			<div class="yScrollListbtn yScrollListbtnr"></div>
+		</div>
+	</div>
+</div>
+
+
+		
+
+     
+	</div>
+	
+</div>
+
+
+
+
+
+<div class="clear"></div>
+<div class="foot">
+	<div class="foot_nr">
+		
+		<div class="foot_left">
+			<h3>15838338565</h3>
+			<div class="dizhi"><i><img src="images/dizhi.jpg"/></i>河南省敬老助老总会办公处5655号</div>
+			<div class="banquan">
+				<p>主办： 河南省敬老助老总会 您是第965315位访问者！ </p>
+				<p>Copyright @ 2011 - 2014 hnjlzlzh.org.cn. All Rights Reserved </p>
+				<p>版权所有： 河南省敬老助老总会 未经许可不得复制、转载。技术支持 SiteServer CMS</p>
+			</div>
+
+
+		</div>
+		<div class="erweima2">
+			<div class="weixin">
+				微信公众号
+				<img src="images/saoma.jpg" />
+			
+			</div>
+			<div class="weixin">
+				微信公众号
+				<img src="images/saoma.jpg" />
+			
+			</div>
+		</div>
+		<div class="foot_right">
+			分享到：
+			<ul>
+				<li><a href="#"><img src="images/fxicon1.jpg"/></a></li>
+				<li><a href="#"><img src="images/fxicon2.jpg"/></a></li>
+				<li><a href="#"><img src="images/fxicon3.jpg"/></a></li>
+				<li><a href="#"><img src="images/fxicon4.jpg"/></a></li>
+				<li><a href="#"><img src="images/fxicon5.jpg"/></a></li>
+				<li><a href="#"><img src="images/fxicon6.jpg"/></a></li>
+				<li><a href="#"><img src="images/fxicon7.jpg"/></a></li>
+				<li><a href="#"><img src="images/fxicon8.jpg"/></a></li>
+				<li><a href="#"><img src="images/fxicon9.jpg"/></a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+
+	</body>
+</html>

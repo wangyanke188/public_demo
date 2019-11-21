@@ -1,0 +1,952 @@
+2019-09-09 15:40:41 -Starting ManagerMain on PC-20120727WMQF with PID 236 (G:\hn_jlxh\jlxh-manager\target\classes started by Administrator in G:\hn_jlxh\jlxh-manager)
+2019-09-09 15:40:41 -Running with Spring Boot v2.1.2.RELEASE, Spring v5.1.4.RELEASE
+2019-09-09 15:40:41 -The following profiles are active: dev
+2019-09-09 15:40:42 -Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-09-09 15:40:42 -Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-09-09 15:40:42 -Finished Spring Data repository scanning in 15ms. Found 0 repository interfaces.
+2019-09-09 15:40:43 -Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$d34f59] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-09 15:40:43 -Bean 'shiroConfig' of type [com.palmble.system.config.ShiroConfig$$EnhancerBySpringCGLIB$$6a582932] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-09 15:40:43 -Bean 'userRealm' of type [com.palmble.system.shiro.UserRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-09 15:40:43 -No configuration found. Configuring ehcache from ehcache-failsafe.xml  found in the classpath: jar:file:/C:/Users/Administrator.PC-20120727WMQF/.m2/repository/net/sf/ehcache/ehcache/2.10.6/ehcache-2.10.6.jar!/ehcache-failsafe.xml
+2019-09-09 15:40:43 -Bean 'cacheManager2' of type [net.sf.ehcache.CacheManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-09 15:40:43 -Bean 'ehCacheManager' of type [org.apache.shiro.cache.ehcache.EhCacheManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-09 15:40:43 -Cache with name 'com.palmble.system.shiro.UserRealm.authorizationCache' does not yet exist.  Creating now.
+2019-09-09 15:40:43 -Added EhCache named [com.palmble.system.shiro.UserRealm.authorizationCache]
+2019-09-09 15:40:43 -Bean 'sessionDAO' of type [org.apache.shiro.session.mgt.eis.MemorySessionDAO] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-09 15:40:43 -Bean 'sessionManager' of type [org.apache.shiro.web.session.mgt.DefaultWebSessionManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-09 15:40:43 -Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-09 15:40:43 -Bean 'authorizationAttributeSourceAdvisor' of type [org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-09 15:40:43 -Tomcat initialized with port(s): 7070 (http)
+2019-09-09 15:40:43 -Initializing ProtocolHandler ["http-nio-7070"]
+2019-09-09 15:40:43 -Starting service [Tomcat]
+2019-09-09 15:40:43 -Starting Servlet engine: [Apache Tomcat/9.0.14]
+2019-09-09 15:40:43 -The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_171\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/Java/jdk1.8.0_171/bin/../jre/bin/server;C:/Program Files/Java/jdk1.8.0_171/bin/../jre/bin;C:/Program Files/Java/jdk1.8.0_171/bin/../jre/lib/amd64;C:\Program Files\Java\jdk1.8.0_171\bin;C:\Program Files\Java\jdk1.8.0_171\jre\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;G:\xftp\;G:\xshell\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;D:\phpStudy\PHPTutorial\php\php-5.6.27-nts;D:\composer;C:\Program Files\Git\cmd;C:\Program Files\MySQL\MySQL Server 5.5\bin;C:\Users\Administrator.PC-20120727WMQF\AppData\Roaming\Composer\vendor\bin;C:\Users\Administrator.PC-20120727WMQF\Desktop;;.]
+2019-09-09 15:40:44 -Initializing Spring embedded WebApplicationContext
+2019-09-09 15:40:44 -Root WebApplicationContext: initialization completed in 2121 ms
+2019-09-09 15:40:44 -Filter xssFilter was not registered (disabled)
+2019-09-09 15:40:44 -{dataSource-1} inited
+2019-09-09 15:40:44 -ApplicationContext registed-->org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2e11485, started on Mon Sep 09 15:40:41 CST 2019
+2019-09-09 15:40:45 -Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-09 15:40:45 -[THYMELEAF][main] Template Mode 'LEGACYHTML5' is deprecated. Using Template Mode 'HTML' instead.
+2019-09-09 15:40:46 -Starting ProtocolHandler ["http-nio-7070"]
+2019-09-09 15:40:46 -Tomcat started on port(s): 7070 (http) with context path ''
+2019-09-09 15:40:46 -Started ManagerMain in 4.858 seconds (JVM running for 5.604)
+2019-09-09 15:40:53 -Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-09-09 15:40:53 -Initializing Servlet 'dispatcherServlet'
+2019-09-09 15:40:53 -Completed initialization in 14 ms
+2019-09-09 15:40:53 -Enabling session validation scheduler...
+2019-09-09 15:40:53 -请求地址 : http://127.0.0.1:7070/login;JSESSIONID=81b8bb1a-e334-4943-86b0-819cf856ed2c
+2019-09-09 15:40:53 -HTTP METHOD : GET
+2019-09-09 15:40:53 -CLASS_METHOD : com.palmble.system.controller.LoginController.login
+2019-09-09 15:40:53 -参数 : []
+2019-09-09 15:40:53 -耗时 : 2
+2019-09-09 15:40:53 -返回值 : login
+2019-09-09 15:40:53 -请求地址 : http://127.0.0.1:7070/vifityCodeController/getVerify
+2019-09-09 15:40:53 -HTTP METHOD : GET
+2019-09-09 15:40:53 -CLASS_METHOD : com.palmble.system.controller.VifityCodeController.getVerify2
+2019-09-09 15:40:53 -参数 : [org.apache.shiro.web.servlet.ShiroHttpServletRequest@635a19ae, org.apache.shiro.web.servlet.ShiroHttpServletResponse@50e1b3da]
+2019-09-09 15:40:54 -耗时 : 366
+2019-09-09 15:40:54 -返回值 : null
+2019-09-09 15:41:03 -请求地址 : http://127.0.0.1:7070/login
+2019-09-09 15:41:03 -HTTP METHOD : POST
+2019-09-09 15:41:03 -CLASS_METHOD : com.palmble.system.controller.LoginController.ajaxLogin
+2019-09-09 15:41:03 -参数 : [admin, 111111, nnnab, org.apache.shiro.web.servlet.ShiroHttpServletRequest@4e2a0c24]
+2019-09-09 15:41:03 -==>  Preparing: select `user_id`,`username`,`name`,`password`,`dept_id`,`email`,`mobile`,`status`,`user_id_create`,`gmt_create`,`gmt_modified`,`sex`,`birth`,`pic_id`,`live_address`,`hobby`,`province`,`city`,`district` from sys_user WHERE username = ? order by user_id desc 
+2019-09-09 15:41:03 -==> Parameters: admin(String)
+2019-09-09 15:41:03 -<==      Total: 1
+2019-09-09 15:41:03 -耗时 : 173
+2019-09-09 15:41:03 -返回值 : {msg=操作成功, code=0}
+2019-09-09 15:41:03 -==>  Preparing: insert into sys_log ( `user_id`, `username`, `operation`, `time`, `method`, `params`, `ip`, `gmt_create` ) values ( ?, ?, ?, ?, ?, ?, ?, ? ) 
+2019-09-09 15:41:03 -==> Parameters: 1(Long), admin(String), 登录(String), 173(Integer), com.palmble.system.controller.LoginController.ajaxLogin()(String), null, 127.0.0.1(String), 2019-09-09 15:41:03.705(Timestamp)
+2019-09-09 15:41:03 -<==    Updates: 1
+2019-09-09 15:41:03 -请求地址 : http://127.0.0.1:7070/index
+2019-09-09 15:41:03 -HTTP METHOD : GET
+2019-09-09 15:41:03 -CLASS_METHOD : com.palmble.system.controller.LoginController.index
+2019-09-09 15:41:03 -参数 : [{}]
+2019-09-09 15:41:03 -==>  Preparing: select distinct m.menu_id , parent_id, name, url, perms,`type`,icon,order_num,gmt_create, gmt_modified from sys_menu m left join sys_role_menu rm on m.menu_id = rm.menu_id left join sys_user_role ur on rm.role_id =ur.role_id where ur.user_id = ? and m.type in(0,1) order by m.order_num 
+2019-09-09 15:41:03 -==> Parameters: 1(Long)
+2019-09-09 15:41:03 -<==      Total: 16
+2019-09-09 15:41:03 -==>  Preparing: select `id`,`type`,`url`,`create_date` from sys_file where id = ? 
+2019-09-09 15:41:03 -==> Parameters: 138(Long)
+2019-09-09 15:41:03 -<==      Total: 0
+2019-09-09 15:41:03 -耗时 : 35
+2019-09-09 15:41:03 -返回值 : index_v1
+2019-09-09 15:41:03 -==>  Preparing: insert into sys_log ( `user_id`, `username`, `operation`, `time`, `method`, `params`, `ip`, `gmt_create` ) values ( ?, ?, ?, ?, ?, ?, ?, ? ) 
+2019-09-09 15:41:03 -==> Parameters: 1(Long), admin(String), 请求访问主页(String), 36(Integer), com.palmble.system.controller.LoginController.index()(String), null, 127.0.0.1(String), 2019-09-09 15:41:03.816(Timestamp)
+2019-09-09 15:41:03 -<==    Updates: 1
+2019-09-09 15:41:03 -请求地址 : http://127.0.0.1:7070/main
+2019-09-09 15:41:03 -HTTP METHOD : GET
+2019-09-09 15:41:03 -CLASS_METHOD : com.palmble.system.controller.LoginController.main
+2019-09-09 15:41:03 -参数 : []
+2019-09-09 15:41:03 -耗时 : 1
+2019-09-09 15:41:03 -返回值 : main
+2019-09-09 15:41:04 -请求地址 : http://127.0.0.1:7070/main
+2019-09-09 15:41:04 -HTTP METHOD : GET
+2019-09-09 15:41:04 -CLASS_METHOD : com.palmble.system.controller.LoginController.main
+2019-09-09 15:41:04 -参数 : []
+2019-09-09 15:41:04 -耗时 : 1
+2019-09-09 15:41:04 -返回值 : main
+2019-09-09 15:41:06 -==>  Preparing: select distinct m.perms from sys_menu m left join sys_role_menu rm on m.menu_id = rm.menu_id left join sys_user_role ur on rm.role_id = ur.role_id where ur.user_id = ? 
+2019-09-09 15:41:06 -==> Parameters: 1(Long)
+2019-09-09 15:41:06 -<==      Total: 30
+2019-09-09 15:41:06 -请求地址 : http://127.0.0.1:7070/sys/user/
+2019-09-09 15:41:06 -HTTP METHOD : GET
+2019-09-09 15:41:06 -CLASS_METHOD : com.palmble.system.controller.UserController.user
+2019-09-09 15:41:06 -参数 : [{}]
+2019-09-09 15:41:06 -耗时 : 1
+2019-09-09 15:41:06 -返回值 : system/user/user
+2019-09-09 15:41:06 -请求地址 : http://127.0.0.1:7070/sys/user/list
+2019-09-09 15:41:06 -HTTP METHOD : GET
+2019-09-09 15:41:06 -CLASS_METHOD : com.palmble.system.controller.UserController.list
+2019-09-09 15:41:06 -参数 : [{limit=10, offset=0, name=, deptId=}]
+2019-09-09 15:41:06 -==>  Preparing: select `user_id`,`username`,`name`,`password`,`dept_id`,`email`,`mobile`,`status`,`user_id_create`,`gmt_create`,`gmt_modified`,`sex`,`birth`,`pic_id`,`live_address`,`hobby`,`province`,`city`,`district` from sys_user order by user_id desc limit ?, ? 
+2019-09-09 15:41:06 -==> Parameters: 0(Integer), 10(Integer)
+2019-09-09 15:41:06 -<==      Total: 10
+2019-09-09 15:41:06 -==>  Preparing: select count(*) from sys_user 
+2019-09-09 15:41:06 -==> Parameters: 
+2019-09-09 15:41:06 -<==      Total: 1
+2019-09-09 15:41:06 -耗时 : 19
+2019-09-09 15:41:06 -返回值 : com.palmble.utils.PageUtils@4a4c6afa
+2019-09-09 15:41:13 -请求地址 : http://127.0.0.1:7070/sys/user/
+2019-09-09 15:41:13 -HTTP METHOD : GET
+2019-09-09 15:41:13 -CLASS_METHOD : com.palmble.system.controller.UserController.user
+2019-09-09 15:41:13 -参数 : [{}]
+2019-09-09 15:41:13 -耗时 : 2
+2019-09-09 15:41:13 -返回值 : system/user/user
+2019-09-09 15:41:14 -请求地址 : http://127.0.0.1:7070/sys/user/list
+2019-09-09 15:41:14 -HTTP METHOD : GET
+2019-09-09 15:41:14 -CLASS_METHOD : com.palmble.system.controller.UserController.list
+2019-09-09 15:41:14 -参数 : [{limit=10, offset=0, name=, deptId=}]
+2019-09-09 15:41:14 -==>  Preparing: select `user_id`,`username`,`name`,`password`,`dept_id`,`email`,`mobile`,`status`,`user_id_create`,`gmt_create`,`gmt_modified`,`sex`,`birth`,`pic_id`,`live_address`,`hobby`,`province`,`city`,`district` from sys_user order by user_id desc limit ?, ? 
+2019-09-09 15:41:14 -==> Parameters: 0(Integer), 10(Integer)
+2019-09-09 15:41:14 -<==      Total: 10
+2019-09-09 15:41:14 -==>  Preparing: select count(*) from sys_user 
+2019-09-09 15:41:14 -==> Parameters: 
+2019-09-09 15:41:14 -<==      Total: 1
+2019-09-09 15:41:14 -耗时 : 15
+2019-09-09 15:41:14 -返回值 : com.palmble.utils.PageUtils@2515f2fd
+2019-09-09 15:42:20 -请求地址 : http://127.0.0.1:7070/main
+2019-09-09 15:42:20 -HTTP METHOD : GET
+2019-09-09 15:42:20 -CLASS_METHOD : com.palmble.system.controller.LoginController.main
+2019-09-09 15:42:20 -参数 : []
+2019-09-09 15:42:20 -耗时 : 0
+2019-09-09 15:42:20 -返回值 : main
+2019-09-09 15:43:13 -请求地址 : http://127.0.0.1:7070/main
+2019-09-09 15:43:13 -HTTP METHOD : GET
+2019-09-09 15:43:13 -CLASS_METHOD : com.palmble.system.controller.LoginController.main
+2019-09-09 15:43:13 -参数 : []
+2019-09-09 15:43:13 -耗时 : 0
+2019-09-09 15:43:13 -返回值 : main
+2019-09-09 16:09:33 -Application shutdown requested.
+2019-09-09 16:09:33 -Shutting down ExecutorService 'applicationTaskExecutor'
+2019-09-09 16:09:33 -{dataSource-1} closed
+2019-09-09 16:09:33 -Disabled session validation scheduler.
+2019-09-09 16:12:30 -Starting ManagerMain on PC-20120727WMQF with PID 8640 (G:\hn_jlxh\jlxh-manager\target\classes started by Administrator in G:\hn_jlxh\jlxh-manager)
+2019-09-09 16:12:30 -The following profiles are active: dev
+2019-09-09 16:12:32 -Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-09-09 16:12:32 -Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-09-09 16:12:32 -Finished Spring Data repository scanning in 20ms. Found 0 repository interfaces.
+2019-09-09 16:12:32 -Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'shiroFilterFactoryBean' defined in class path resource [com/fzy/system/config/ShiroConfig.class]: BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'shiroConfig' defined in file [G:\hn_jlxh\jlxh-manager\target\classes\com\fzy\system\config\ShiroConfig.class]: BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration': BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.cache.annotation.ProxyCachingConfiguration': Initialization of bean failed; nested exception is java.lang.IllegalArgumentException: error Type referred to is not an annotation type: com$palmble$common$annotation$Log
+2019-09-09 16:12:32 -
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-09-09 16:12:32 -Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'shiroFilterFactoryBean' defined in class path resource [com/fzy/system/config/ShiroConfig.class]: BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'shiroConfig' defined in file [G:\hn_jlxh\jlxh-manager\target\classes\com\fzy\system\config\ShiroConfig.class]: BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration': BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.cache.annotation.ProxyCachingConfiguration': Initialization of bean failed; nested exception is java.lang.IllegalArgumentException: error Type referred to is not an annotation type: com$palmble$common$annotation$Log
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:493)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:204)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.registerBeanPostProcessors(PostProcessorRegistrationDelegate.java:240)
+	at org.springframework.context.support.AbstractApplicationContext.registerBeanPostProcessors(AbstractApplicationContext.java:707)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:531)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at com.fzy.ManagerMain.main(ManagerMain.java:20)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'shiroConfig' defined in file [G:\hn_jlxh\jlxh-manager\target\classes\com\fzy\system\config\ShiroConfig.class]: BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration': BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.cache.annotation.ProxyCachingConfiguration': Initialization of bean failed; nested exception is java.lang.IllegalArgumentException: error Type referred to is not an annotation type: com$palmble$common$annotation$Log
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:493)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:392)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1288)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1127)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:538)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:498)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:204)
+	at org.springframework.aop.framework.autoproxy.BeanFactoryAdvisorRetrievalHelper.findAdvisorBeans(BeanFactoryAdvisorRetrievalHelper.java:91)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findCandidateAdvisors(AbstractAdvisorAutoProxyCreator.java:109)
+	at org.springframework.aop.aspectj.annotation.AnnotationAwareAspectJAutoProxyCreator.findCandidateAdvisors(AnnotationAwareAspectJAutoProxyCreator.java:92)
+	at org.springframework.aop.aspectj.autoproxy.AspectJAwareAdvisorAutoProxyCreator.shouldSkip(AspectJAwareAdvisorAutoProxyCreator.java:101)
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.postProcessBeforeInstantiation(AbstractAutoProxyCreator.java:253)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:1091)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.resolveBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:1064)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:487)
+	... 14 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration': BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.cache.annotation.ProxyCachingConfiguration': Initialization of bean failed; nested exception is java.lang.IllegalArgumentException: error Type referred to is not an annotation type: com$palmble$common$annotation$Log
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:493)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:392)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1288)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1127)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:538)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:498)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:204)
+	at org.springframework.aop.framework.autoproxy.BeanFactoryAdvisorRetrievalHelper.findAdvisorBeans(BeanFactoryAdvisorRetrievalHelper.java:91)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findCandidateAdvisors(AbstractAdvisorAutoProxyCreator.java:109)
+	at org.springframework.aop.aspectj.annotation.AnnotationAwareAspectJAutoProxyCreator.findCandidateAdvisors(AnnotationAwareAspectJAutoProxyCreator.java:92)
+	at org.springframework.aop.aspectj.autoproxy.AspectJAwareAdvisorAutoProxyCreator.shouldSkip(AspectJAwareAdvisorAutoProxyCreator.java:101)
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.postProcessBeforeInstantiation(AbstractAutoProxyCreator.java:253)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:1091)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.resolveBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:1064)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:487)
+	... 35 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.cache.annotation.ProxyCachingConfiguration': Initialization of bean failed; nested exception is java.lang.IllegalArgumentException: error Type referred to is not an annotation type: com$palmble$common$annotation$Log
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:584)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:498)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:392)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1288)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1127)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:538)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:498)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:204)
+	at org.springframework.aop.framework.autoproxy.BeanFactoryAdvisorRetrievalHelper.findAdvisorBeans(BeanFactoryAdvisorRetrievalHelper.java:91)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findCandidateAdvisors(AbstractAdvisorAutoProxyCreator.java:109)
+	at org.springframework.aop.aspectj.annotation.AnnotationAwareAspectJAutoProxyCreator.findCandidateAdvisors(AnnotationAwareAspectJAutoProxyCreator.java:92)
+	at org.springframework.aop.aspectj.autoproxy.AspectJAwareAdvisorAutoProxyCreator.shouldSkip(AspectJAwareAdvisorAutoProxyCreator.java:101)
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.postProcessBeforeInstantiation(AbstractAutoProxyCreator.java:253)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:1091)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.resolveBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:1064)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:487)
+	... 56 common frames omitted
+Caused by: java.lang.IllegalArgumentException: error Type referred to is not an annotation type: com$palmble$common$annotation$Log
+	at org.aspectj.weaver.tools.PointcutParser.parsePointcutExpression(PointcutParser.java:319)
+	at org.springframework.aop.aspectj.AspectJExpressionPointcut.buildPointcutExpression(AspectJExpressionPointcut.java:227)
+	at org.springframework.aop.aspectj.AspectJExpressionPointcut.obtainPointcutExpression(AspectJExpressionPointcut.java:198)
+	at org.springframework.aop.aspectj.AspectJExpressionPointcut.getClassFilter(AspectJExpressionPointcut.java:177)
+	at org.springframework.aop.support.AopUtils.canApply(AopUtils.java:225)
+	at org.springframework.aop.support.AopUtils.canApply(AopUtils.java:288)
+	at org.springframework.aop.support.AopUtils.findAdvisorsThatCanApply(AopUtils.java:320)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findAdvisorsThatCanApply(AbstractAdvisorAutoProxyCreator.java:126)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findEligibleAdvisors(AbstractAdvisorAutoProxyCreator.java:95)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.getAdvicesAndAdvisorsForBean(AbstractAdvisorAutoProxyCreator.java:76)
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.wrapIfNecessary(AbstractAutoProxyCreator.java:349)
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.postProcessAfterInitialization(AbstractAutoProxyCreator.java:301)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsAfterInitialization(AbstractAutowireCapableBeanFactory.java:434)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1749)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:576)
+	... 78 common frames omitted
+2019-09-09 16:15:26 -Starting ManagerMain on PC-20120727WMQF with PID 6928 (G:\hn_jlxh\jlxh-manager\target\classes started by Administrator in G:\hn_jlxh\jlxh-manager)
+2019-09-09 16:15:26 -The following profiles are active: dev
+2019-09-09 16:15:28 -Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-09-09 16:15:28 -Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-09-09 16:15:28 -Finished Spring Data repository scanning in 21ms. Found 0 repository interfaces.
+2019-09-09 16:15:28 -Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'shiroFilterFactoryBean' defined in class path resource [com/fzy/system/config/ShiroConfig.class]: BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'shiroConfig' defined in file [G:\hn_jlxh\jlxh-manager\target\classes\com\fzy\system\config\ShiroConfig.class]: BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration': BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.cache.annotation.ProxyCachingConfiguration': Initialization of bean failed; nested exception is java.lang.IllegalArgumentException: error Type referred to is not an annotation type: com$palmble$common$annotation$Log
+2019-09-09 16:15:28 -
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-09-09 16:15:28 -Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'shiroFilterFactoryBean' defined in class path resource [com/fzy/system/config/ShiroConfig.class]: BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'shiroConfig' defined in file [G:\hn_jlxh\jlxh-manager\target\classes\com\fzy\system\config\ShiroConfig.class]: BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration': BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.cache.annotation.ProxyCachingConfiguration': Initialization of bean failed; nested exception is java.lang.IllegalArgumentException: error Type referred to is not an annotation type: com$palmble$common$annotation$Log
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:493)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:204)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.registerBeanPostProcessors(PostProcessorRegistrationDelegate.java:240)
+	at org.springframework.context.support.AbstractApplicationContext.registerBeanPostProcessors(AbstractApplicationContext.java:707)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:531)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at com.fzy.ManagerMain.main(ManagerMain.java:20)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'shiroConfig' defined in file [G:\hn_jlxh\jlxh-manager\target\classes\com\fzy\system\config\ShiroConfig.class]: BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration': BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.cache.annotation.ProxyCachingConfiguration': Initialization of bean failed; nested exception is java.lang.IllegalArgumentException: error Type referred to is not an annotation type: com$palmble$common$annotation$Log
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:493)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:392)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1288)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1127)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:538)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:498)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:204)
+	at org.springframework.aop.framework.autoproxy.BeanFactoryAdvisorRetrievalHelper.findAdvisorBeans(BeanFactoryAdvisorRetrievalHelper.java:91)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findCandidateAdvisors(AbstractAdvisorAutoProxyCreator.java:109)
+	at org.springframework.aop.aspectj.annotation.AnnotationAwareAspectJAutoProxyCreator.findCandidateAdvisors(AnnotationAwareAspectJAutoProxyCreator.java:92)
+	at org.springframework.aop.aspectj.autoproxy.AspectJAwareAdvisorAutoProxyCreator.shouldSkip(AspectJAwareAdvisorAutoProxyCreator.java:101)
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.postProcessBeforeInstantiation(AbstractAutoProxyCreator.java:253)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:1091)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.resolveBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:1064)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:487)
+	... 14 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration': BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.cache.annotation.ProxyCachingConfiguration': Initialization of bean failed; nested exception is java.lang.IllegalArgumentException: error Type referred to is not an annotation type: com$palmble$common$annotation$Log
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:493)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:392)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1288)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1127)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:538)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:498)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:204)
+	at org.springframework.aop.framework.autoproxy.BeanFactoryAdvisorRetrievalHelper.findAdvisorBeans(BeanFactoryAdvisorRetrievalHelper.java:91)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findCandidateAdvisors(AbstractAdvisorAutoProxyCreator.java:109)
+	at org.springframework.aop.aspectj.annotation.AnnotationAwareAspectJAutoProxyCreator.findCandidateAdvisors(AnnotationAwareAspectJAutoProxyCreator.java:92)
+	at org.springframework.aop.aspectj.autoproxy.AspectJAwareAdvisorAutoProxyCreator.shouldSkip(AspectJAwareAdvisorAutoProxyCreator.java:101)
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.postProcessBeforeInstantiation(AbstractAutoProxyCreator.java:253)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:1091)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.resolveBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:1064)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:487)
+	... 35 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.cache.annotation.ProxyCachingConfiguration': Initialization of bean failed; nested exception is java.lang.IllegalArgumentException: error Type referred to is not an annotation type: com$palmble$common$annotation$Log
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:584)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:498)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:392)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1288)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1127)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:538)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:498)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:204)
+	at org.springframework.aop.framework.autoproxy.BeanFactoryAdvisorRetrievalHelper.findAdvisorBeans(BeanFactoryAdvisorRetrievalHelper.java:91)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findCandidateAdvisors(AbstractAdvisorAutoProxyCreator.java:109)
+	at org.springframework.aop.aspectj.annotation.AnnotationAwareAspectJAutoProxyCreator.findCandidateAdvisors(AnnotationAwareAspectJAutoProxyCreator.java:92)
+	at org.springframework.aop.aspectj.autoproxy.AspectJAwareAdvisorAutoProxyCreator.shouldSkip(AspectJAwareAdvisorAutoProxyCreator.java:101)
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.postProcessBeforeInstantiation(AbstractAutoProxyCreator.java:253)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:1091)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.resolveBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:1064)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:487)
+	... 56 common frames omitted
+Caused by: java.lang.IllegalArgumentException: error Type referred to is not an annotation type: com$palmble$common$annotation$Log
+	at org.aspectj.weaver.tools.PointcutParser.parsePointcutExpression(PointcutParser.java:319)
+	at org.springframework.aop.aspectj.AspectJExpressionPointcut.buildPointcutExpression(AspectJExpressionPointcut.java:227)
+	at org.springframework.aop.aspectj.AspectJExpressionPointcut.obtainPointcutExpression(AspectJExpressionPointcut.java:198)
+	at org.springframework.aop.aspectj.AspectJExpressionPointcut.getClassFilter(AspectJExpressionPointcut.java:177)
+	at org.springframework.aop.support.AopUtils.canApply(AopUtils.java:225)
+	at org.springframework.aop.support.AopUtils.canApply(AopUtils.java:288)
+	at org.springframework.aop.support.AopUtils.findAdvisorsThatCanApply(AopUtils.java:320)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findAdvisorsThatCanApply(AbstractAdvisorAutoProxyCreator.java:126)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findEligibleAdvisors(AbstractAdvisorAutoProxyCreator.java:95)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.getAdvicesAndAdvisorsForBean(AbstractAdvisorAutoProxyCreator.java:76)
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.wrapIfNecessary(AbstractAutoProxyCreator.java:349)
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.postProcessAfterInitialization(AbstractAutoProxyCreator.java:301)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsAfterInitialization(AbstractAutowireCapableBeanFactory.java:434)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1749)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:576)
+	... 78 common frames omitted
+2019-09-09 16:17:55 -Starting ManagerMain on PC-20120727WMQF with PID 8840 (G:\hn_jlxh\jlxh-manager\target\classes started by Administrator in G:\hn_jlxh\jlxh-manager)
+2019-09-09 16:17:55 -The following profiles are active: dev
+2019-09-09 16:17:56 -Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-09-09 16:17:56 -Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-09-09 16:17:56 -Finished Spring Data repository scanning in 21ms. Found 0 repository interfaces.
+2019-09-09 16:17:57 -Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$79282719] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-09 16:17:57 -Bean 'shiroConfig' of type [com.fzy.system.config.ShiroConfig$$EnhancerBySpringCGLIB$$40f4542e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-09 16:17:57 -Bean 'userRealm' of type [com.fzy.system.shiro.UserRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-09 16:17:58 -No configuration found. Configuring ehcache from ehcache-failsafe.xml  found in the classpath: jar:file:/C:/Users/Administrator.PC-20120727WMQF/.m2/repository/net/sf/ehcache/ehcache/2.10.6/ehcache-2.10.6.jar!/ehcache-failsafe.xml
+2019-09-09 16:17:58 -Bean 'cacheManager2' of type [net.sf.ehcache.CacheManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-09 16:17:58 -Bean 'ehCacheManager' of type [org.apache.shiro.cache.ehcache.EhCacheManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-09 16:17:58 -Cache with name 'com.fzy.system.shiro.UserRealm.authorizationCache' does not yet exist.  Creating now.
+2019-09-09 16:17:58 -Added EhCache named [com.fzy.system.shiro.UserRealm.authorizationCache]
+2019-09-09 16:17:58 -Bean 'sessionDAO' of type [org.apache.shiro.session.mgt.eis.MemorySessionDAO] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-09 16:17:58 -Bean 'sessionManager' of type [org.apache.shiro.web.session.mgt.DefaultWebSessionManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-09 16:17:58 -Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-09 16:17:58 -Bean 'authorizationAttributeSourceAdvisor' of type [org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-09 16:17:59 -Tomcat initialized with port(s): 7070 (http)
+2019-09-09 16:17:59 -Initializing ProtocolHandler ["http-nio-7070"]
+2019-09-09 16:17:59 -Starting service [Tomcat]
+2019-09-09 16:17:59 -Starting Servlet engine: [Apache Tomcat/9.0.14]
+2019-09-09 16:17:59 -The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_171\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/Java/jdk1.8.0_171/bin/../jre/bin/server;C:/Program Files/Java/jdk1.8.0_171/bin/../jre/bin;C:/Program Files/Java/jdk1.8.0_171/bin/../jre/lib/amd64;C:\Program Files\Java\jdk1.8.0_171\bin;C:\Program Files\Java\jdk1.8.0_171\jre\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;G:\xftp\;G:\xshell\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;D:\phpStudy\PHPTutorial\php\php-5.6.27-nts;D:\composer;C:\Program Files\Git\cmd;C:\Program Files\MySQL\MySQL Server 5.5\bin;C:\Users\Administrator.PC-20120727WMQF\AppData\Roaming\Composer\vendor\bin;C:\Users\Administrator.PC-20120727WMQF\Desktop;;.]
+2019-09-09 16:17:59 -Initializing Spring embedded WebApplicationContext
+2019-09-09 16:17:59 -Root WebApplicationContext: initialization completed in 3596 ms
+2019-09-09 16:17:59 -Filter xssFilter was not registered (disabled)
+2019-09-09 16:17:59 -{dataSource-1} inited
+2019-09-09 16:18:01 -Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-09 16:18:01 -[THYMELEAF][main] Template Mode 'LEGACYHTML5' is deprecated. Using Template Mode 'HTML' instead.
+2019-09-09 16:18:02 -Starting ProtocolHandler ["http-nio-7070"]
+2019-09-09 16:18:03 -Tomcat started on port(s): 7070 (http) with context path ''
+2019-09-09 16:18:03 -Started ManagerMain in 8.567 seconds (JVM running for 9.371)
+2019-09-09 16:18:08 -Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-09-09 16:18:08 -Initializing Servlet 'dispatcherServlet'
+2019-09-09 16:18:08 -Completed initialization in 30 ms
+2019-09-09 16:18:08 -Enabling session validation scheduler...
+2019-09-09 16:18:08 -请求地址 : http://127.0.0.1:7070/
+2019-09-09 16:18:08 -HTTP METHOD : GET
+2019-09-09 16:18:08 -CLASS_METHOD : com.fzy.system.controller.LoginController.welcome
+2019-09-09 16:18:08 -参数 : [{}]
+2019-09-09 16:18:08 -耗时 : 3
+2019-09-09 16:18:08 -请求地址 : http://127.0.0.1:7070/login
+2019-09-09 16:18:08 -HTTP METHOD : GET
+2019-09-09 16:18:08 -CLASS_METHOD : com.fzy.system.controller.LoginController.login
+2019-09-09 16:18:08 -参数 : []
+2019-09-09 16:18:08 -耗时 : 1
+2019-09-09 16:18:09 -请求地址 : http://127.0.0.1:7070/vifityCodeController/getVerify
+2019-09-09 16:18:09 -HTTP METHOD : GET
+2019-09-09 16:18:09 -CLASS_METHOD : com.fzy.system.controller.VifityCodeController.getVerify2
+2019-09-09 16:18:09 -参数 : [org.apache.shiro.web.servlet.ShiroHttpServletRequest@37290007, org.apache.shiro.web.servlet.ShiroHttpServletResponse@3988a443]
+2019-09-09 16:18:09 -耗时 : 274
+2019-09-09 16:18:20 -请求地址 : http://127.0.0.1:7070/login
+2019-09-09 16:18:20 -HTTP METHOD : POST
+2019-09-09 16:18:20 -CLASS_METHOD : com.fzy.system.controller.LoginController.ajaxLogin
+2019-09-09 16:18:20 -参数 : [admin, 111111, ea83e, org.apache.shiro.web.servlet.ShiroHttpServletRequest@5001747c]
+2019-09-09 16:18:20 -耗时 : 304
+2019-09-09 16:18:20 -请求地址 : http://127.0.0.1:7070/index
+2019-09-09 16:18:20 -HTTP METHOD : GET
+2019-09-09 16:18:20 -CLASS_METHOD : com.fzy.system.controller.LoginController.index
+2019-09-09 16:18:20 -参数 : [{}]
+2019-09-09 16:18:20 -耗时 : 83
+2019-09-09 16:18:21 -请求地址 : http://127.0.0.1:7070/main
+2019-09-09 16:18:21 -HTTP METHOD : GET
+2019-09-09 16:18:21 -CLASS_METHOD : com.fzy.system.controller.LoginController.main
+2019-09-09 16:18:21 -参数 : []
+2019-09-09 16:18:21 -耗时 : 2
+2019-09-09 16:18:21 -请求地址 : http://127.0.0.1:7070/main
+2019-09-09 16:18:21 -HTTP METHOD : GET
+2019-09-09 16:18:21 -CLASS_METHOD : com.fzy.system.controller.LoginController.main
+2019-09-09 16:18:21 -参数 : []
+2019-09-09 16:18:21 -耗时 : 0
+2019-09-09 16:18:23 -请求地址 : http://127.0.0.1:7070/sys/user/
+2019-09-09 16:18:23 -HTTP METHOD : GET
+2019-09-09 16:18:23 -CLASS_METHOD : com.fzy.system.controller.UserController.user
+2019-09-09 16:18:23 -参数 : [{}]
+2019-09-09 16:18:23 -耗时 : 1
+2019-09-09 16:18:23 -请求地址 : http://127.0.0.1:7070/sys/user/list
+2019-09-09 16:18:23 -HTTP METHOD : GET
+2019-09-09 16:18:23 -CLASS_METHOD : com.fzy.system.controller.UserController.list
+2019-09-09 16:18:23 -参数 : [{limit=10, offset=0, name=, deptId=}]
+2019-09-09 16:18:23 -耗时 : 45
+2019-09-09 16:22:53 -Starting ManagerMain on PC-20120727WMQF with PID 992 (G:\hn_jlxh\jlxh-manager\target\classes started by Administrator in G:\hn_jlxh\jlxh-manager)
+2019-09-09 16:22:53 -The following profiles are active: dev
+2019-09-09 16:22:54 -Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-09-09 16:22:54 -Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-09-09 16:22:54 -Finished Spring Data repository scanning in 21ms. Found 0 repository interfaces.
+2019-09-09 16:22:55 -Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$2c40c6ac] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-09 16:22:55 -Bean 'shiroConfig' of type [com.fzy.system.config.ShiroConfig$$EnhancerBySpringCGLIB$$f40cf3c1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-09 16:22:55 -Bean 'userRealm' of type [com.fzy.system.shiro.UserRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-09 16:22:56 -No configuration found. Configuring ehcache from ehcache-failsafe.xml  found in the classpath: jar:file:/C:/Users/Administrator.PC-20120727WMQF/.m2/repository/net/sf/ehcache/ehcache/2.10.6/ehcache-2.10.6.jar!/ehcache-failsafe.xml
+2019-09-09 16:22:56 -Bean 'cacheManager2' of type [net.sf.ehcache.CacheManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-09 16:22:56 -Bean 'ehCacheManager' of type [org.apache.shiro.cache.ehcache.EhCacheManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-09 16:22:56 -Cache with name 'com.fzy.system.shiro.UserRealm.authorizationCache' does not yet exist.  Creating now.
+2019-09-09 16:22:56 -Added EhCache named [com.fzy.system.shiro.UserRealm.authorizationCache]
+2019-09-09 16:22:56 -Bean 'sessionDAO' of type [org.apache.shiro.session.mgt.eis.MemorySessionDAO] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-09 16:22:56 -Bean 'sessionManager' of type [org.apache.shiro.web.session.mgt.DefaultWebSessionManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-09 16:22:56 -Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-09 16:22:56 -Bean 'authorizationAttributeSourceAdvisor' of type [org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-09 16:22:56 -Tomcat initialized with port(s): 7070 (http)
+2019-09-09 16:22:57 -Initializing ProtocolHandler ["http-nio-7070"]
+2019-09-09 16:22:57 -Starting service [Tomcat]
+2019-09-09 16:22:57 -Starting Servlet engine: [Apache Tomcat/9.0.14]
+2019-09-09 16:22:57 -The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_171\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/Java/jdk1.8.0_171/bin/../jre/bin/server;C:/Program Files/Java/jdk1.8.0_171/bin/../jre/bin;C:/Program Files/Java/jdk1.8.0_171/bin/../jre/lib/amd64;C:\Program Files\Java\jdk1.8.0_171\bin;C:\Program Files\Java\jdk1.8.0_171\jre\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;G:\xftp\;G:\xshell\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;D:\phpStudy\PHPTutorial\php\php-5.6.27-nts;D:\composer;C:\Program Files\Git\cmd;C:\Program Files\MySQL\MySQL Server 5.5\bin;C:\Users\Administrator.PC-20120727WMQF\AppData\Roaming\Composer\vendor\bin;C:\Users\Administrator.PC-20120727WMQF\Desktop;;.]
+2019-09-09 16:22:57 -Initializing Spring embedded WebApplicationContext
+2019-09-09 16:22:57 -Root WebApplicationContext: initialization completed in 3728 ms
+2019-09-09 16:22:57 -Filter xssFilter was not registered (disabled)
+2019-09-09 16:22:57 -{dataSource-1} inited
+2019-09-09 16:22:59 -Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-09 16:22:59 -[THYMELEAF][main] Template Mode 'LEGACYHTML5' is deprecated. Using Template Mode 'HTML' instead.
+2019-09-09 16:23:00 -Starting ProtocolHandler ["http-nio-7070"]
+2019-09-09 16:23:00 -Tomcat started on port(s): 7070 (http) with context path ''
+2019-09-09 16:23:00 -Started ManagerMain in 8.666 seconds (JVM running for 9.476)
+2019-09-09 16:23:07 -Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-09-09 16:23:07 -Initializing Servlet 'dispatcherServlet'
+2019-09-09 16:23:07 -Completed initialization in 20 ms
+2019-09-09 16:23:07 -Enabling session validation scheduler...
+2019-09-09 16:23:07 -请求地址 : http://127.0.0.1:7070/
+2019-09-09 16:23:07 -HTTP METHOD : GET
+2019-09-09 16:23:07 -CLASS_METHOD : com.fzy.system.controller.LoginController.welcome
+2019-09-09 16:23:07 -参数 : [{}]
+2019-09-09 16:23:07 -耗时 : 3
+2019-09-09 16:23:07 -请求地址 : http://127.0.0.1:7070/login
+2019-09-09 16:23:07 -HTTP METHOD : GET
+2019-09-09 16:23:07 -CLASS_METHOD : com.fzy.system.controller.LoginController.login
+2019-09-09 16:23:07 -参数 : []
+2019-09-09 16:23:07 -耗时 : 2
+2019-09-09 16:23:07 -请求地址 : http://127.0.0.1:7070/vifityCodeController/getVerify
+2019-09-09 16:23:07 -HTTP METHOD : GET
+2019-09-09 16:23:07 -CLASS_METHOD : com.fzy.system.controller.VifityCodeController.getVerify2
+2019-09-09 16:23:07 -参数 : [org.apache.shiro.web.servlet.ShiroHttpServletRequest@6e70b5c5, org.apache.shiro.web.servlet.ShiroHttpServletResponse@58dbbbf4]
+2019-09-09 16:23:08 -耗时 : 280
+2019-09-09 16:23:18 -请求地址 : http://127.0.0.1:7070/login
+2019-09-09 16:23:18 -HTTP METHOD : POST
+2019-09-09 16:23:18 -CLASS_METHOD : com.fzy.system.controller.LoginController.ajaxLogin
+2019-09-09 16:23:18 -参数 : [admin, 123456, ceddc, org.apache.shiro.web.servlet.ShiroHttpServletRequest@46ea1d2c]
+2019-09-09 16:23:18 -耗时 : 336
+2019-09-09 16:23:18 -请求地址 : http://127.0.0.1:7070/vifityCodeController/getVerify
+2019-09-09 16:23:18 -HTTP METHOD : GET
+2019-09-09 16:23:18 -CLASS_METHOD : com.fzy.system.controller.VifityCodeController.getVerify2
+2019-09-09 16:23:18 -参数 : [org.apache.shiro.web.servlet.ShiroHttpServletRequest@33c1a757, org.apache.shiro.web.servlet.ShiroHttpServletResponse@421779d2]
+2019-09-09 16:23:18 -耗时 : 21
+2019-09-09 16:23:29 -请求地址 : http://127.0.0.1:7070/login
+2019-09-09 16:23:29 -HTTP METHOD : POST
+2019-09-09 16:23:29 -CLASS_METHOD : com.fzy.system.controller.LoginController.ajaxLogin
+2019-09-09 16:23:29 -参数 : [admin, 111111, dgp32, org.apache.shiro.web.servlet.ShiroHttpServletRequest@4faa8dce]
+2019-09-09 16:23:29 -耗时 : 25
+2019-09-09 16:23:29 -请求地址 : http://127.0.0.1:7070/index
+2019-09-09 16:23:29 -HTTP METHOD : GET
+2019-09-09 16:23:29 -CLASS_METHOD : com.fzy.system.controller.LoginController.index
+2019-09-09 16:23:29 -参数 : [{}]
+2019-09-09 16:23:29 -耗时 : 82
+2019-09-09 16:23:29 -请求地址 : http://127.0.0.1:7070/main
+2019-09-09 16:23:29 -HTTP METHOD : GET
+2019-09-09 16:23:29 -CLASS_METHOD : com.fzy.system.controller.LoginController.main
+2019-09-09 16:23:29 -参数 : []
+2019-09-09 16:23:29 -耗时 : 1
+2019-09-09 16:23:29 -请求地址 : http://127.0.0.1:7070/main
+2019-09-09 16:23:29 -HTTP METHOD : GET
+2019-09-09 16:23:29 -CLASS_METHOD : com.fzy.system.controller.LoginController.main
+2019-09-09 16:23:29 -参数 : []
+2019-09-09 16:23:29 -耗时 : 1
+2019-09-09 16:23:33 -请求地址 : http://127.0.0.1:7070/sys/user/
+2019-09-09 16:23:33 -HTTP METHOD : GET
+2019-09-09 16:23:33 -CLASS_METHOD : com.fzy.system.controller.UserController.user
+2019-09-09 16:23:33 -参数 : [{}]
+2019-09-09 16:23:33 -耗时 : 1
+2019-09-09 16:23:34 -请求地址 : http://127.0.0.1:7070/sys/user/list
+2019-09-09 16:23:34 -HTTP METHOD : GET
+2019-09-09 16:23:34 -CLASS_METHOD : com.fzy.system.controller.UserController.list
+2019-09-09 16:23:34 -参数 : [{limit=10, offset=0, name=, deptId=}]
+2019-09-09 16:23:34 -耗时 : 40
+2019-09-09 16:23:42 -请求地址 : http://127.0.0.1:7070/sys/user/
+2019-09-09 16:23:42 -HTTP METHOD : GET
+2019-09-09 16:23:42 -CLASS_METHOD : com.fzy.system.controller.UserController.user
+2019-09-09 16:23:42 -参数 : [{}]
+2019-09-09 16:23:42 -耗时 : 1
+2019-09-09 16:23:43 -请求地址 : http://127.0.0.1:7070/sys/user/list
+2019-09-09 16:23:43 -HTTP METHOD : GET
+2019-09-09 16:23:43 -CLASS_METHOD : com.fzy.system.controller.UserController.list
+2019-09-09 16:23:43 -参数 : [{limit=10, offset=0, name=, deptId=}]
+2019-09-09 16:23:43 -耗时 : 11
+2019-09-09 16:30:35 -Starting ManagerMain on PC-20120727WMQF with PID 9480 (G:\hn_jlxh\jlxh-manager\target\classes started by Administrator in G:\hn_jlxh\jlxh-manager)
+2019-09-09 16:30:35 -The following profiles are active: dev
+2019-09-09 16:30:36 -Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-09-09 16:30:36 -Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-09-09 16:30:36 -Finished Spring Data repository scanning in 24ms. Found 0 repository interfaces.
+2019-09-09 16:30:37 -Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$c9c17275] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-09 16:30:37 -Bean 'shiroConfig' of type [com.fzy.system.config.ShiroConfig$$EnhancerBySpringCGLIB$$918d9f8a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-09 16:30:37 -Bean 'userRealm' of type [com.fzy.system.shiro.UserRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-09 16:30:38 -No configuration found. Configuring ehcache from ehcache-failsafe.xml  found in the classpath: jar:file:/C:/Users/Administrator.PC-20120727WMQF/.m2/repository/net/sf/ehcache/ehcache/2.10.6/ehcache-2.10.6.jar!/ehcache-failsafe.xml
+2019-09-09 16:30:38 -Bean 'cacheManager2' of type [net.sf.ehcache.CacheManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-09 16:30:38 -Bean 'ehCacheManager' of type [org.apache.shiro.cache.ehcache.EhCacheManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-09 16:30:38 -Cache with name 'com.fzy.system.shiro.UserRealm.authorizationCache' does not yet exist.  Creating now.
+2019-09-09 16:30:38 -Added EhCache named [com.fzy.system.shiro.UserRealm.authorizationCache]
+2019-09-09 16:30:38 -Bean 'sessionDAO' of type [org.apache.shiro.session.mgt.eis.MemorySessionDAO] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-09 16:30:38 -Bean 'sessionManager' of type [org.apache.shiro.web.session.mgt.DefaultWebSessionManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-09 16:30:38 -Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-09 16:30:38 -Bean 'authorizationAttributeSourceAdvisor' of type [org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-09 16:30:39 -Tomcat initialized with port(s): 7070 (http)
+2019-09-09 16:30:39 -Initializing ProtocolHandler ["http-nio-7070"]
+2019-09-09 16:30:39 -Starting service [Tomcat]
+2019-09-09 16:30:39 -Starting Servlet engine: [Apache Tomcat/9.0.14]
+2019-09-09 16:30:39 -The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_171\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/Java/jdk1.8.0_171/bin/../jre/bin/server;C:/Program Files/Java/jdk1.8.0_171/bin/../jre/bin;C:/Program Files/Java/jdk1.8.0_171/bin/../jre/lib/amd64;C:\Program Files\Java\jdk1.8.0_171\bin;C:\Program Files\Java\jdk1.8.0_171\jre\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;G:\xftp\;G:\xshell\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;D:\phpStudy\PHPTutorial\php\php-5.6.27-nts;D:\composer;C:\Program Files\Git\cmd;C:\Program Files\MySQL\MySQL Server 5.5\bin;C:\Users\Administrator.PC-20120727WMQF\AppData\Roaming\Composer\vendor\bin;C:\Users\Administrator.PC-20120727WMQF\Desktop;;.]
+2019-09-09 16:30:39 -Initializing Spring embedded WebApplicationContext
+2019-09-09 16:30:39 -Root WebApplicationContext: initialization completed in 4008 ms
+2019-09-09 16:30:39 -Filter xssFilter was not registered (disabled)
+2019-09-09 16:30:39 -{dataSource-1} inited
+2019-09-09 16:30:41 -Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-09 16:30:41 -[THYMELEAF][main] Template Mode 'LEGACYHTML5' is deprecated. Using Template Mode 'HTML' instead.
+2019-09-09 16:30:42 -Starting ProtocolHandler ["http-nio-7070"]
+2019-09-09 16:30:42 -Tomcat started on port(s): 7070 (http) with context path ''
+2019-09-09 16:30:42 -Started ManagerMain in 8.651 seconds (JVM running for 9.408)
+2019-09-09 16:30:51 -Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-09-09 16:30:51 -Initializing Servlet 'dispatcherServlet'
+2019-09-09 16:30:51 -Completed initialization in 18 ms
+2019-09-09 16:30:51 -Enabling session validation scheduler...
+2019-09-09 16:30:51 -请求地址 : http://127.0.0.1:7070/
+2019-09-09 16:30:51 -HTTP METHOD : GET
+2019-09-09 16:30:51 -CLASS_METHOD : com.fzy.system.controller.LoginController.welcome
+2019-09-09 16:30:51 -参数 : [{}]
+2019-09-09 16:30:51 -耗时 : 3
+2019-09-09 16:30:51 -请求地址 : http://127.0.0.1:7070/login
+2019-09-09 16:30:51 -HTTP METHOD : GET
+2019-09-09 16:30:51 -CLASS_METHOD : com.fzy.system.controller.LoginController.login
+2019-09-09 16:30:51 -参数 : []
+2019-09-09 16:30:51 -耗时 : 0
+2019-09-09 16:30:52 -请求地址 : http://127.0.0.1:7070/vifityCodeController/getVerify
+2019-09-09 16:30:52 -HTTP METHOD : GET
+2019-09-09 16:30:52 -CLASS_METHOD : com.fzy.system.controller.VifityCodeController.getVerify2
+2019-09-09 16:30:52 -参数 : [org.apache.shiro.web.servlet.ShiroHttpServletRequest@17002a5c, org.apache.shiro.web.servlet.ShiroHttpServletResponse@5202a6d8]
+2019-09-09 16:30:52 -耗时 : 324
+2019-09-09 16:31:36 -请求地址 : http://127.0.0.1:7070/
+2019-09-09 16:31:36 -HTTP METHOD : GET
+2019-09-09 16:31:36 -CLASS_METHOD : com.fzy.system.controller.LoginController.welcome
+2019-09-09 16:31:36 -参数 : [{}]
+2019-09-09 16:31:36 -耗时 : 1
+2019-09-09 16:31:36 -请求地址 : http://127.0.0.1:7070/login
+2019-09-09 16:31:36 -HTTP METHOD : GET
+2019-09-09 16:31:36 -CLASS_METHOD : com.fzy.system.controller.LoginController.login
+2019-09-09 16:31:36 -参数 : []
+2019-09-09 16:31:36 -耗时 : 1
+2019-09-09 16:31:37 -请求地址 : http://127.0.0.1:7070/vifityCodeController/getVerify
+2019-09-09 16:31:37 -HTTP METHOD : GET
+2019-09-09 16:31:37 -CLASS_METHOD : com.fzy.system.controller.VifityCodeController.getVerify2
+2019-09-09 16:31:37 -参数 : [org.apache.shiro.web.servlet.ShiroHttpServletRequest@21f68790, org.apache.shiro.web.servlet.ShiroHttpServletResponse@27afccc]
+2019-09-09 16:31:37 -耗时 : 40
+2019-09-09 16:31:43 -请求地址 : http://127.0.0.1:7070/login
+2019-09-09 16:31:43 -HTTP METHOD : POST
+2019-09-09 16:31:43 -CLASS_METHOD : com.fzy.system.controller.LoginController.ajaxLogin
+2019-09-09 16:31:43 -参数 : [admin, 111111, f3p72, org.apache.shiro.web.servlet.ShiroHttpServletRequest@12e6bbcc]
+2019-09-09 16:31:44 -耗时 : 300
+2019-09-09 16:31:44 -请求地址 : http://127.0.0.1:7070/index
+2019-09-09 16:31:44 -HTTP METHOD : GET
+2019-09-09 16:31:44 -CLASS_METHOD : com.fzy.system.controller.LoginController.index
+2019-09-09 16:31:44 -参数 : [{}]
+2019-09-09 16:31:44 -耗时 : 81
+2019-09-09 16:31:44 -请求地址 : http://127.0.0.1:7070/main
+2019-09-09 16:31:44 -HTTP METHOD : GET
+2019-09-09 16:31:44 -CLASS_METHOD : com.fzy.system.controller.LoginController.main
+2019-09-09 16:31:44 -参数 : []
+2019-09-09 16:31:44 -耗时 : 0
+2019-09-09 16:31:44 -请求地址 : http://127.0.0.1:7070/main
+2019-09-09 16:31:44 -HTTP METHOD : GET
+2019-09-09 16:31:44 -CLASS_METHOD : com.fzy.system.controller.LoginController.main
+2019-09-09 16:31:44 -参数 : []
+2019-09-09 16:31:44 -耗时 : 1
+2019-09-09 16:31:46 -请求地址 : http://127.0.0.1:7070/sys/user/
+2019-09-09 16:31:46 -HTTP METHOD : GET
+2019-09-09 16:31:46 -CLASS_METHOD : com.fzy.system.controller.UserController.user
+2019-09-09 16:31:46 -参数 : [{}]
+2019-09-09 16:31:46 -耗时 : 1
+2019-09-09 16:31:46 -请求地址 : http://127.0.0.1:7070/system/sysDept/tree
+2019-09-09 16:31:46 -HTTP METHOD : GET
+2019-09-09 16:31:46 -CLASS_METHOD : com.fzy.system.controller.DeptController.tree
+2019-09-09 16:31:46 -参数 : []
+2019-09-09 16:31:46 -请求地址 : http://127.0.0.1:7070/sys/user/list
+2019-09-09 16:31:46 -HTTP METHOD : GET
+2019-09-09 16:31:46 -CLASS_METHOD : com.fzy.system.controller.UserController.list
+2019-09-09 16:31:46 -参数 : [{limit=10, offset=0, name=, deptId=}]
+2019-09-09 16:31:47 -耗时 : 35
+2019-09-09 16:31:47 -耗时 : 85
+2019-09-09 16:31:54 -请求地址 : http://127.0.0.1:7070/sys/user/list
+2019-09-09 16:31:54 -HTTP METHOD : GET
+2019-09-09 16:31:54 -CLASS_METHOD : com.fzy.system.controller.UserController.list
+2019-09-09 16:31:54 -参数 : [{limit=10, offset=0, name=, deptId=}]
+2019-09-09 16:31:54 -耗时 : 19
+2019-09-09 16:31:55 -请求地址 : http://127.0.0.1:7070/sys/user/list
+2019-09-09 16:31:55 -HTTP METHOD : GET
+2019-09-09 16:31:55 -CLASS_METHOD : com.fzy.system.controller.UserController.list
+2019-09-09 16:31:55 -参数 : [{limit=10, offset=0, name=, deptId=}]
+2019-09-09 16:31:55 -耗时 : 29
+2019-09-09 16:31:56 -请求地址 : http://127.0.0.1:7070/sys/user/list
+2019-09-09 16:31:56 -HTTP METHOD : GET
+2019-09-09 16:31:56 -CLASS_METHOD : com.fzy.system.controller.UserController.list
+2019-09-09 16:31:56 -参数 : [{limit=10, offset=0, name=, deptId=13}]
+2019-09-09 16:31:56 -耗时 : 19
+2019-09-09 16:31:57 -请求地址 : http://127.0.0.1:7070/sys/user/list
+2019-09-09 16:31:57 -HTTP METHOD : GET
+2019-09-09 16:31:57 -CLASS_METHOD : com.fzy.system.controller.UserController.list
+2019-09-09 16:31:57 -参数 : [{limit=10, offset=0, name=, deptId=11}]
+2019-09-09 16:31:57 -耗时 : 18
+2019-09-09 16:31:57 -请求地址 : http://127.0.0.1:7070/sys/user/list
+2019-09-09 16:31:57 -HTTP METHOD : GET
+2019-09-09 16:31:57 -CLASS_METHOD : com.fzy.system.controller.UserController.list
+2019-09-09 16:31:57 -参数 : [{limit=10, offset=0, name=, deptId=9}]
+2019-09-09 16:31:57 -耗时 : 14
+2019-09-09 16:31:58 -请求地址 : http://127.0.0.1:7070/sys/user/list
+2019-09-09 16:31:58 -HTTP METHOD : GET
+2019-09-09 16:31:58 -CLASS_METHOD : com.fzy.system.controller.UserController.list
+2019-09-09 16:31:58 -参数 : [{limit=10, offset=0, name=, deptId=6}]
+2019-09-09 16:31:58 -耗时 : 15
+2019-09-09 16:31:59 -请求地址 : http://127.0.0.1:7070/sys/user/list
+2019-09-09 16:31:59 -HTTP METHOD : GET
+2019-09-09 16:31:59 -CLASS_METHOD : com.fzy.system.controller.UserController.list
+2019-09-09 16:31:59 -参数 : [{limit=10, offset=0, name=, deptId=9}]
+2019-09-09 16:31:59 -耗时 : 14
+2019-09-09 16:31:59 -请求地址 : http://127.0.0.1:7070/sys/user/list
+2019-09-09 16:31:59 -HTTP METHOD : GET
+2019-09-09 16:31:59 -CLASS_METHOD : com.fzy.system.controller.UserController.list
+2019-09-09 16:31:59 -参数 : [{limit=10, offset=0, name=, deptId=11}]
+2019-09-09 16:31:59 -耗时 : 14
+2019-09-09 16:32:00 -请求地址 : http://127.0.0.1:7070/sys/user/list
+2019-09-09 16:32:00 -HTTP METHOD : GET
+2019-09-09 16:32:00 -CLASS_METHOD : com.fzy.system.controller.UserController.list
+2019-09-09 16:32:00 -参数 : [{limit=10, offset=0, name=, deptId=13}]
+2019-09-09 16:32:00 -耗时 : 11
+2019-09-09 16:32:04 -请求地址 : http://127.0.0.1:7070/sys/user/list
+2019-09-09 16:32:04 -HTTP METHOD : GET
+2019-09-09 16:32:04 -CLASS_METHOD : com.fzy.system.controller.UserController.list
+2019-09-09 16:32:04 -参数 : [{limit=10, offset=0, name=, deptId=}]
+2019-09-09 16:32:04 -耗时 : 12
+2019-09-09 17:03:52 -Starting ManagerMain on PC-20120727WMQF with PID 10188 (G:\hn_jlxh\jlxh-manager\target\classes started by Administrator in G:\hn_jlxh\jlxh-manager)
+2019-09-09 17:03:52 -The following profiles are active: dev
+2019-09-09 17:03:53 -Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-09-09 17:03:53 -Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-09-09 17:03:53 -Finished Spring Data repository scanning in 18ms. Found 0 repository interfaces.
+2019-09-09 17:03:54 -Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$5afb2c2f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-09 17:03:54 -Bean 'shiroConfig' of type [com.fzy.system.config.ShiroConfig$$EnhancerBySpringCGLIB$$22c75944] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-09 17:03:54 -Bean 'userRealm' of type [com.fzy.system.shiro.UserRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-09 17:03:54 -No configuration found. Configuring ehcache from ehcache-failsafe.xml  found in the classpath: jar:file:/D:/Program%20Files%20(x86)/Apche/repository/net/sf/ehcache/ehcache/2.10.6/ehcache-2.10.6.jar!/ehcache-failsafe.xml
+2019-09-09 17:03:54 -Bean 'cacheManager2' of type [net.sf.ehcache.CacheManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-09 17:03:54 -Bean 'ehCacheManager' of type [org.apache.shiro.cache.ehcache.EhCacheManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-09 17:03:54 -Cache with name 'com.fzy.system.shiro.UserRealm.authorizationCache' does not yet exist.  Creating now.
+2019-09-09 17:03:55 -Added EhCache named [com.fzy.system.shiro.UserRealm.authorizationCache]
+2019-09-09 17:03:55 -Bean 'sessionDAO' of type [org.apache.shiro.session.mgt.eis.MemorySessionDAO] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-09 17:03:55 -Bean 'sessionManager' of type [org.apache.shiro.web.session.mgt.DefaultWebSessionManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-09 17:03:55 -Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-09 17:03:55 -Bean 'authorizationAttributeSourceAdvisor' of type [org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-09 17:03:55 -Tomcat initialized with port(s): 7070 (http)
+2019-09-09 17:03:55 -Initializing ProtocolHandler ["http-nio-7070"]
+2019-09-09 17:03:55 -Starting service [Tomcat]
+2019-09-09 17:03:55 -Starting Servlet engine: [Apache Tomcat/9.0.14]
+2019-09-09 17:03:55 -The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_171\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/Java/jdk1.8.0_171/bin/../jre/bin/server;C:/Program Files/Java/jdk1.8.0_171/bin/../jre/bin;C:/Program Files/Java/jdk1.8.0_171/bin/../jre/lib/amd64;C:\Program Files\Java\jdk1.8.0_171\bin;C:\Program Files\Java\jdk1.8.0_171\jre\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;G:\xftp\;G:\xshell\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;D:\phpStudy\PHPTutorial\php\php-5.6.27-nts;D:\composer;C:\Program Files\Git\cmd;C:\Program Files\MySQL\MySQL Server 5.5\bin;C:\Users\Administrator.PC-20120727WMQF\AppData\Roaming\Composer\vendor\bin;C:\Users\Administrator.PC-20120727WMQF\Desktop;;.]
+2019-09-09 17:03:55 -Initializing Spring embedded WebApplicationContext
+2019-09-09 17:03:55 -Root WebApplicationContext: initialization completed in 3685 ms
+2019-09-09 17:03:56 -Filter xssFilter was not registered (disabled)
+2019-09-09 17:03:56 -{dataSource-1} inited
+2019-09-09 17:03:57 -Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-09 17:03:58 -[THYMELEAF][main] Template Mode 'LEGACYHTML5' is deprecated. Using Template Mode 'HTML' instead.
+2019-09-09 17:03:59 -Starting ProtocolHandler ["http-nio-7070"]
+2019-09-09 17:03:59 -Tomcat started on port(s): 7070 (http) with context path ''
+2019-09-09 17:03:59 -Started ManagerMain in 8.5 seconds (JVM running for 9.382)
+2019-09-09 17:04:14 -Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-09-09 17:04:14 -Initializing Servlet 'dispatcherServlet'
+2019-09-09 17:04:14 -Completed initialization in 23 ms
+2019-09-09 17:04:14 -Enabling session validation scheduler...
+2019-09-09 17:04:14 -请求地址 : http://127.0.0.1:7070/
+2019-09-09 17:04:14 -HTTP METHOD : GET
+2019-09-09 17:04:14 -CLASS_METHOD : com.fzy.system.controller.LoginController.welcome
+2019-09-09 17:04:14 -参数 : [{}]
+2019-09-09 17:04:14 -耗时 : 10
+2019-09-09 17:04:14 -请求地址 : http://127.0.0.1:7070/login
+2019-09-09 17:04:14 -HTTP METHOD : GET
+2019-09-09 17:04:14 -CLASS_METHOD : com.fzy.system.controller.LoginController.login
+2019-09-09 17:04:14 -参数 : []
+2019-09-09 17:04:14 -耗时 : 1
+2019-09-09 17:04:14 -请求地址 : http://127.0.0.1:7070/vifityCodeController/getVerify
+2019-09-09 17:04:14 -HTTP METHOD : GET
+2019-09-09 17:04:14 -CLASS_METHOD : com.fzy.system.controller.VifityCodeController.getVerify2
+2019-09-09 17:04:14 -参数 : [org.apache.shiro.web.servlet.ShiroHttpServletRequest@25955987, org.apache.shiro.web.servlet.ShiroHttpServletResponse@f0eef09]
+2019-09-09 17:04:15 -耗时 : 263
+2019-09-09 17:08:45 -Starting ManagerMain on PC-20120727WMQF with PID 8512 (G:\hn_jlxh\jlxh-manager\target\classes started by Administrator in G:\hn_jlxh\jlxh-manager)
+2019-09-09 17:08:45 -The following profiles are active: dev
+2019-09-09 17:08:46 -Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-09-09 17:08:46 -Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-09-09 17:08:46 -Finished Spring Data repository scanning in 21ms. Found 0 repository interfaces.
+2019-09-09 17:08:47 -Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$883281d4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-09 17:08:47 -Bean 'shiroConfig' of type [com.fzy.system.config.ShiroConfig$$EnhancerBySpringCGLIB$$4ffeaee9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-09 17:08:47 -Bean 'userRealm' of type [com.fzy.system.shiro.UserRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-09 17:08:48 -No configuration found. Configuring ehcache from ehcache-failsafe.xml  found in the classpath: jar:file:/D:/Program%20Files%20(x86)/Apche/repository/net/sf/ehcache/ehcache/2.10.6/ehcache-2.10.6.jar!/ehcache-failsafe.xml
+2019-09-09 17:08:48 -Bean 'cacheManager2' of type [net.sf.ehcache.CacheManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-09 17:08:48 -Bean 'ehCacheManager' of type [org.apache.shiro.cache.ehcache.EhCacheManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-09 17:08:48 -Cache with name 'com.fzy.system.shiro.UserRealm.authorizationCache' does not yet exist.  Creating now.
+2019-09-09 17:08:48 -Added EhCache named [com.fzy.system.shiro.UserRealm.authorizationCache]
+2019-09-09 17:08:48 -Bean 'sessionDAO' of type [org.apache.shiro.session.mgt.eis.MemorySessionDAO] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-09 17:08:48 -Bean 'sessionManager' of type [org.apache.shiro.web.session.mgt.DefaultWebSessionManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-09 17:08:48 -Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-09 17:08:48 -Bean 'authorizationAttributeSourceAdvisor' of type [org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-09 17:08:49 -Tomcat initialized with port(s): 7070 (http)
+2019-09-09 17:08:49 -Initializing ProtocolHandler ["http-nio-7070"]
+2019-09-09 17:08:49 -Starting service [Tomcat]
+2019-09-09 17:08:49 -Starting Servlet engine: [Apache Tomcat/9.0.14]
+2019-09-09 17:08:49 -The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_171\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/Java/jdk1.8.0_171/bin/../jre/bin/server;C:/Program Files/Java/jdk1.8.0_171/bin/../jre/bin;C:/Program Files/Java/jdk1.8.0_171/bin/../jre/lib/amd64;C:\Program Files\Java\jdk1.8.0_171\bin;C:\Program Files\Java\jdk1.8.0_171\jre\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;G:\xftp\;G:\xshell\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;D:\phpStudy\PHPTutorial\php\php-5.6.27-nts;D:\composer;C:\Program Files\Git\cmd;C:\Program Files\MySQL\MySQL Server 5.5\bin;C:\Users\Administrator.PC-20120727WMQF\AppData\Roaming\Composer\vendor\bin;C:\Users\Administrator.PC-20120727WMQF\Desktop;;.]
+2019-09-09 17:08:49 -Initializing Spring embedded WebApplicationContext
+2019-09-09 17:08:49 -Root WebApplicationContext: initialization completed in 3558 ms
+2019-09-09 17:08:49 -Filter xssFilter was not registered (disabled)
+2019-09-09 17:08:50 -{dataSource-1} inited
+2019-09-09 17:08:51 -Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-09 17:08:51 -[THYMELEAF][main] Template Mode 'LEGACYHTML5' is deprecated. Using Template Mode 'HTML' instead.
+2019-09-09 17:08:52 -Starting ProtocolHandler ["http-nio-7070"]
+2019-09-09 17:08:53 -Tomcat started on port(s): 7070 (http) with context path ''
+2019-09-09 17:08:53 -Started ManagerMain in 8.775 seconds (JVM running for 9.508)
+2019-09-09 17:09:04 -Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-09-09 17:09:04 -Initializing Servlet 'dispatcherServlet'
+2019-09-09 17:09:04 -Completed initialization in 50 ms
+2019-09-09 17:09:04 -Enabling session validation scheduler...
+2019-09-09 17:09:04 -请求地址 : http://127.0.0.1:7070/
+2019-09-09 17:09:04 -HTTP METHOD : GET
+2019-09-09 17:09:04 -CLASS_METHOD : com.fzy.system.controller.LoginController.welcome
+2019-09-09 17:09:04 -参数 : [{}]
+2019-09-09 17:09:04 -耗时 : 4
+2019-09-09 17:09:04 -请求地址 : http://127.0.0.1:7070/login
+2019-09-09 17:09:04 -HTTP METHOD : GET
+2019-09-09 17:09:05 -CLASS_METHOD : com.fzy.system.controller.LoginController.login
+2019-09-09 17:09:05 -参数 : []
+2019-09-09 17:09:05 -耗时 : 3
+2019-09-09 17:09:05 -请求地址 : http://127.0.0.1:7070/vifityCodeController/getVerify
+2019-09-09 17:09:05 -HTTP METHOD : GET
+2019-09-09 17:09:05 -CLASS_METHOD : com.fzy.system.controller.VifityCodeController.getVerify2
+2019-09-09 17:09:05 -参数 : [org.apache.shiro.web.servlet.ShiroHttpServletRequest@102c54f3, org.apache.shiro.web.servlet.ShiroHttpServletResponse@7a4a710f]
+2019-09-09 17:09:05 -耗时 : 329
+2019-09-09 17:09:16 -请求地址 : http://127.0.0.1:7070/login
+2019-09-09 17:09:16 -HTTP METHOD : POST
+2019-09-09 17:09:16 -CLASS_METHOD : com.fzy.system.controller.LoginController.ajaxLogin
+2019-09-09 17:09:16 -参数 : [admin, 111111, ay4wn, org.apache.shiro.web.servlet.ShiroHttpServletRequest@6f5b031d]
+2019-09-09 17:09:17 -耗时 : 302
+2019-09-09 17:09:17 -请求地址 : http://127.0.0.1:7070/index
+2019-09-09 17:09:17 -HTTP METHOD : GET
+2019-09-09 17:09:17 -CLASS_METHOD : com.fzy.system.controller.LoginController.index
+2019-09-09 17:09:17 -参数 : [{}]
+2019-09-09 17:09:17 -耗时 : 62
+2019-09-09 17:09:17 -请求地址 : http://127.0.0.1:7070/main
+2019-09-09 17:09:17 -HTTP METHOD : GET
+2019-09-09 17:09:17 -CLASS_METHOD : com.fzy.system.controller.LoginController.main
+2019-09-09 17:09:17 -参数 : []
+2019-09-09 17:09:17 -耗时 : 2
+2019-09-09 17:09:17 -请求地址 : http://127.0.0.1:7070/main
+2019-09-09 17:09:17 -HTTP METHOD : GET
+2019-09-09 17:09:17 -CLASS_METHOD : com.fzy.system.controller.LoginController.main
+2019-09-09 17:09:17 -参数 : []
+2019-09-09 17:09:17 -耗时 : 0
+2019-09-09 17:09:20 -请求地址 : http://127.0.0.1:7070/login
+2019-09-09 17:09:20 -HTTP METHOD : GET
+2019-09-09 17:09:20 -CLASS_METHOD : com.fzy.system.controller.LoginController.login
+2019-09-09 17:09:20 -参数 : []
+2019-09-09 17:09:20 -耗时 : 2
+2019-09-09 17:09:20 -请求地址 : http://127.0.0.1:7070/vifityCodeController/getVerify
+2019-09-09 17:09:20 -HTTP METHOD : GET
+2019-09-09 17:09:20 -CLASS_METHOD : com.fzy.system.controller.VifityCodeController.getVerify2
+2019-09-09 17:09:20 -参数 : [org.apache.shiro.web.servlet.ShiroHttpServletRequest@134e8c6e, org.apache.shiro.web.servlet.ShiroHttpServletResponse@341d79fe]
+2019-09-09 17:09:20 -耗时 : 30
+2019-09-09 17:09:29 -请求地址 : http://127.0.0.1:7070/login
+2019-09-09 17:09:29 -HTTP METHOD : POST
+2019-09-09 17:09:29 -CLASS_METHOD : com.fzy.system.controller.LoginController.ajaxLogin
+2019-09-09 17:09:29 -参数 : [admin, 111111, 2aeby, org.apache.shiro.web.servlet.ShiroHttpServletRequest@54844389]
+2019-09-09 17:09:29 -耗时 : 27
+2019-09-09 17:09:29 -请求地址 : http://127.0.0.1:7070/index
+2019-09-09 17:09:29 -HTTP METHOD : GET
+2019-09-09 17:09:29 -CLASS_METHOD : com.fzy.system.controller.LoginController.index
+2019-09-09 17:09:29 -参数 : [{}]
+2019-09-09 17:09:29 -耗时 : 22
+2019-09-09 17:09:29 -请求地址 : http://127.0.0.1:7070/main
+2019-09-09 17:09:29 -HTTP METHOD : GET
+2019-09-09 17:09:29 -CLASS_METHOD : com.fzy.system.controller.LoginController.main
+2019-09-09 17:09:29 -参数 : []
+2019-09-09 17:09:29 -耗时 : 2
+2019-09-09 17:09:29 -请求地址 : http://127.0.0.1:7070/main
+2019-09-09 17:09:29 -HTTP METHOD : GET
+2019-09-09 17:09:29 -CLASS_METHOD : com.fzy.system.controller.LoginController.main
+2019-09-09 17:09:29 -参数 : []
+2019-09-09 17:09:29 -耗时 : 0
+2019-09-09 17:09:31 -请求地址 : http://127.0.0.1:7070/sys/user/
+2019-09-09 17:09:31 -HTTP METHOD : GET
+2019-09-09 17:09:31 -CLASS_METHOD : com.fzy.system.controller.UserController.user
+2019-09-09 17:09:31 -参数 : [{}]
+2019-09-09 17:09:31 -耗时 : 0
+2019-09-09 17:09:31 -请求地址 : http://127.0.0.1:7070/system/sysDept/tree
+2019-09-09 17:09:31 -HTTP METHOD : GET
+2019-09-09 17:09:31 -CLASS_METHOD : com.fzy.system.controller.DeptController.tree
+2019-09-09 17:09:31 -参数 : []
+2019-09-09 17:09:31 -耗时 : 12
+2019-09-09 17:09:31 -请求地址 : http://127.0.0.1:7070/sys/user/list
+2019-09-09 17:09:31 -HTTP METHOD : GET
+2019-09-09 17:09:31 -CLASS_METHOD : com.fzy.system.controller.UserController.list
+2019-09-09 17:09:31 -参数 : [{limit=10, offset=0, name=, deptId=}]
+2019-09-09 17:09:31 -耗时 : 66
+2019-09-09 17:09:42 -请求地址 : http://127.0.0.1:7070/sys/user/list
+2019-09-09 17:09:42 -HTTP METHOD : GET
+2019-09-09 17:09:42 -CLASS_METHOD : com.fzy.system.controller.UserController.list
+2019-09-09 17:09:42 -参数 : [{limit=10, offset=0, name=, deptId=}]
+2019-09-09 17:09:42 -耗时 : 20
+2019-09-09 17:09:43 -请求地址 : http://127.0.0.1:7070/sys/user/list
+2019-09-09 17:09:43 -HTTP METHOD : GET
+2019-09-09 17:09:43 -CLASS_METHOD : com.fzy.system.controller.UserController.list
+2019-09-09 17:09:43 -参数 : [{limit=10, offset=0, name=, deptId=13}]
+2019-09-09 17:09:43 -耗时 : 21
+2019-09-09 17:09:43 -请求地址 : http://127.0.0.1:7070/sys/user/list
+2019-09-09 17:09:43 -HTTP METHOD : GET
+2019-09-09 17:09:43 -CLASS_METHOD : com.fzy.system.controller.UserController.list
+2019-09-09 17:09:43 -参数 : [{limit=10, offset=0, name=, deptId=11}]
+2019-09-09 17:09:43 -耗时 : 16
+2019-09-09 17:09:44 -请求地址 : http://127.0.0.1:7070/sys/user/list
+2019-09-09 17:09:44 -HTTP METHOD : GET
+2019-09-09 17:09:44 -CLASS_METHOD : com.fzy.system.controller.UserController.list
+2019-09-09 17:09:44 -参数 : [{limit=10, offset=0, name=, deptId=9}]
+2019-09-09 17:09:44 -耗时 : 17
+2019-09-09 17:09:45 -请求地址 : http://127.0.0.1:7070/sys/user/list
+2019-09-09 17:09:45 -HTTP METHOD : GET
+2019-09-09 17:09:45 -CLASS_METHOD : com.fzy.system.controller.UserController.list
+2019-09-09 17:09:45 -参数 : [{limit=10, offset=0, name=, deptId=6}]
+2019-09-09 17:09:45 -耗时 : 17
+2019-09-09 17:09:45 -请求地址 : http://127.0.0.1:7070/sys/user/list
+2019-09-09 17:09:45 -HTTP METHOD : GET
+2019-09-09 17:09:45 -CLASS_METHOD : com.fzy.system.controller.UserController.list
+2019-09-09 17:09:45 -参数 : [{limit=10, offset=0, name=, deptId=9}]
+2019-09-09 17:09:46 -耗时 : 17
+2019-09-09 17:09:46 -请求地址 : http://127.0.0.1:7070/sys/user/list
+2019-09-09 17:09:46 -HTTP METHOD : GET
+2019-09-09 17:09:46 -CLASS_METHOD : com.fzy.system.controller.UserController.list
+2019-09-09 17:09:46 -参数 : [{limit=10, offset=0, name=, deptId=11}]
+2019-09-09 17:09:46 -耗时 : 14
+2019-09-09 17:09:46 -请求地址 : http://127.0.0.1:7070/sys/user/list
+2019-09-09 17:09:46 -HTTP METHOD : GET
+2019-09-09 17:09:46 -CLASS_METHOD : com.fzy.system.controller.UserController.list
+2019-09-09 17:09:46 -参数 : [{limit=10, offset=0, name=, deptId=13}]
+2019-09-09 17:09:46 -耗时 : 18
+2019-09-09 17:09:47 -请求地址 : http://127.0.0.1:7070/sys/user/list
+2019-09-09 17:09:47 -HTTP METHOD : GET
+2019-09-09 17:09:47 -CLASS_METHOD : com.fzy.system.controller.UserController.list
+2019-09-09 17:09:47 -参数 : [{limit=10, offset=0, name=, deptId=}]
+2019-09-09 17:09:47 -耗时 : 18
+2019-09-09 17:09:51 -请求地址 : http://127.0.0.1:7070/sys/user/edit/138
+2019-09-09 17:09:51 -HTTP METHOD : GET
+2019-09-09 17:09:51 -CLASS_METHOD : com.fzy.system.controller.UserController.edit
+2019-09-09 17:09:51 -参数 : [{}, 138]
+2019-09-09 17:09:51 -耗时 : 63
+2019-09-09 17:09:56 -请求地址 : http://127.0.0.1:7070/sys/role
+2019-09-09 17:09:56 -HTTP METHOD : GET
+2019-09-09 17:09:56 -CLASS_METHOD : com.fzy.system.controller.RoleController.role
+2019-09-09 17:09:56 -参数 : []
+2019-09-09 17:09:56 -耗时 : 1
+2019-09-09 17:09:56 -请求地址 : http://127.0.0.1:7070/sys/role/list
+2019-09-09 17:09:56 -HTTP METHOD : GET
+2019-09-09 17:09:56 -CLASS_METHOD : com.fzy.system.controller.RoleController.list
+2019-09-09 17:09:56 -参数 : []
+2019-09-09 17:09:56 -耗时 : 3
+2019-09-09 17:09:57 -请求地址 : http://127.0.0.1:7070/sys/menu/
+2019-09-09 17:09:57 -HTTP METHOD : GET
+2019-09-09 17:09:57 -CLASS_METHOD : com.fzy.system.controller.MenuController.menu
+2019-09-09 17:09:57 -参数 : [{}]
+2019-09-09 17:09:57 -耗时 : 1
+2019-09-09 17:09:57 -请求地址 : http://127.0.0.1:7070/sys/menu/list
+2019-09-09 17:09:57 -HTTP METHOD : GET
+2019-09-09 17:09:57 -CLASS_METHOD : com.fzy.system.controller.MenuController.list
+2019-09-09 17:09:57 -参数 : [{sort=order_num}]
+2019-09-09 17:09:57 -耗时 : 26
+2019-09-09 17:10:01 -请求地址 : http://127.0.0.1:7070/sys/menu/
+2019-09-09 17:10:01 -HTTP METHOD : GET
+2019-09-09 17:10:01 -CLASS_METHOD : com.fzy.system.controller.MenuController.menu
+2019-09-09 17:10:01 -参数 : [{}]
+2019-09-09 17:10:01 -耗时 : 1
+2019-09-09 17:10:01 -请求地址 : http://127.0.0.1:7070/sys/menu/list
+2019-09-09 17:10:01 -HTTP METHOD : GET
+2019-09-09 17:10:01 -CLASS_METHOD : com.fzy.system.controller.MenuController.list
+2019-09-09 17:10:01 -参数 : [{sort=order_num}]
+2019-09-09 17:10:01 -耗时 : 8
+2019-09-09 18:09:04 -Validating all active sessions...
+2019-09-09 18:09:04 -Finished session validation.  [1] sessions were stopped.
